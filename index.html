@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Pokemon Api</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="nav">
+        <button id="prevBtn" disabled>上一頁</button>
+        <button id="nextBtn">下一頁</button>
+    </div>
+    <h1>Pokemon Api串接</h1>
+    <div id="result"></div>
+    <div id="result2"></div>
+
+</g>
+</svg>
+</body>
+<script>
+    const test="https://pokeapi.co/api/v2/pokemon"
+    const pokemon='pikachu'
+
+     fetch(`${test}/${pokemon}`)
+         .then(response=>{
+             if(!response.ok){
+                throw new Error("查無此寶可夢")
+           }
+             return response.json();
+         })
+         .then(ob=>{
+            console.log(ob)
+    //         document.getElementById("result").innerHTML=`
+    //         <h2>${object.name}</h2>
+    //         <img src="${object.sprites.front_default}" alt="${object.name}">
+    //         `
+        })
+         .catch(error=>{
+            console.log("錯誤")
+         })
+
+
+        const apiUrl="https://pokeapi.co/api/v2/pokemon"
+
+        const limit=20
+        let offset=0
+
+        const prevBtn=document.getElementById("prevBtn")
+        const nextBtn=document.getElementById("nextBtn")
+
+        prevBtn.onclick=()=>{
+            if(offset>=limit){
+                offset=offset-limit
+                fetchAndRender();
+            }
+        }
+
+        nextBtn.onclick=()=>{
+            offset=offset+limit
+            fetchAndRender();
+
+        }
+
+        function fetchAndRender(){
+            const apiList=`${apiUrl}?limit=${limit}&offset=${offset}`
+            fetch(apiList)
+            .then(response=>{
+                if(!response.ok){
+                    throw new Error("沒拿到寶可夢資料")
+                }
+                return response.json()
+            })
+            .then(item=>{
+                console.log(item) //item 每隻寶可夢資料的
+                let html="";
+                const detailPromises=item.results.map(i=>
+                    fetch(i.url)
+                        .then(res=>{
+                            if(!res.ok) throw new Error(`抓${i.name}失敗`)
+                            return res.json()  //result網址promise
+                        })
+                    
+                )
+                return Promise.all(detailPromises)
+                .then(allDetails=>{
+                    return {item,allDetails}
+                })
+
+                .then(({item,allDetails})=>{
+                    let html=""
+                    allDetails.forEach(p=>{
+                        html+=`<div class="card">
+                            <h2>#${p.id} ${p.name}</h2>
+                            <img src="${p.sprites.front_default}" alt="${p.name}">
+                            <img src="${p.sprites.front_shiny}" alt="${p.name}">
+                            <p>類型：${p.types.map(t => t.type.name).join('、')}</p>
+                            <p>${p.held_items.length?p.held_items.map(h=>`道具：${h.item.name}`).join("、"):"無持有道具"}</p>
+                            <button onclick="playerCry('${p.cries.latest}')"><i class="fas fa-volume-up"></i></button>
+                            
+                        </div>`
+                    })
+                  document.getElementById("result2").innerHTML = html;
+                    prevBtn.disabled = offset === 0;
+                    nextBtn.disabled = !item.next;
+                })
+
+
+
+
+            })
+        }
+        
+function playerCry(url) {
+  const audio = new Audio(url);
+  audio.play();
+}
+        fetchAndRender();
+</script>
+</html>
