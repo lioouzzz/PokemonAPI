@@ -5,19 +5,143 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Pokemon Api</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
+        <style>
+      :root {
+        --primary: #fad02a; 
+        --secondary: #78afdc; 
+        --bg: #f5f7fa;
+        --radius: 1rem;
+        --shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+      }
+
+      body{
+        background-color: rgba(242, 238, 232, 0.903);
+      }
+      h1{
+        text-align: center;
+        font-family: 'Afacad Quicksand', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #e7a31a;
+        margin-top: 1rem;
+      }
+
+      
+      #nav{
+        justify-content: center;
+        display: flex;
+        gap: 1rem;
+      }
+
+      header{
+        display: flex;
+        align-items: center;
+      }
+      #result2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        margin: 1rem;
+        transition: transform 0.2s ease,border-color 0.2s ease,box-shadow 0.2s ease;
+
+      }
+      .card:hover{
+        border: #e7a31a 1px solid;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .card h2 {
+        font-family: 'Afacad Flux', sans-serif;
+        font-size: 1.25rem;
+        margin: 0;
+        font-weight: 700;
+        color: var(--secondary);
+      }
+
+      .card img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+      .card p {
+        margin: 0.25rem 0;
+        font-size: 0.85rem;
+      }
+
+      .card button {
+        border: none;
+        background: var(--primary);
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 20%;
+        margin-inline: auto;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        transition: background 0.15s ease;
+      }
+
+      .card button:hover {
+        background: #eeaf02;
+      }
+
+      .nav{
+        margin:0 auto; 
+        display:flex;
+        gap:1rem;
+    }
+
+      #prevBtn{
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        background: var(--primary);
+        color: black;
+        border: none;
+        cursor: pointer;
+      }
+
+      #nextBtn{
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        background: var(--primary);
+        color: black;
+        border: none;
+        cursor: pointer;
+
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 1rem;
+        color: #777;
+      }
+    </style>
 </head>
 <body>
     <div id="nav">
         <button id="prevBtn" disabled>上一頁</button>
         <button id="nextBtn">下一頁</button>
     </div>
-    <h1>Pokemon Api串接</h1>
     <div id="result"></div>
     <div id="result2"></div>
-
-</g>
-</svg>
 </body>
 <script>
     const test="https://pokeapi.co/api/v2/pokemon"
