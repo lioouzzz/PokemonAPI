@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Pokemon Api</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
@@ -136,12 +135,13 @@
     </style>
 </head>
 <body>
-    <div id="nav">
-        <button id="prevBtn" disabled>上一頁</button>
-        <button id="nextBtn">下一頁</button>
-    </div>
+    <input id="searchBox" type="text" placeholder="請輸入可愛寶可夢的名稱...">
     <div id="result"></div>
     <div id="result2"></div>
+        <div id="nav">
+            <button id="prevBtn" disabled>上一頁</button>
+            <button id="nextBtn">下一頁</button>
+        </div>
 </body>
 <script>
     const test="https://pokeapi.co/api/v2/pokemon"
@@ -187,7 +187,44 @@
 
         }
 
+        const searchBox=document.getElementById("searchBox")
+        const speciesUrl="https://pokeapi.co/api/v2/pokemon-species"
+
+                // 搜尋功能
+        searchBox.addEventListener("keypress",e=>{
+            if(e.key==="Enter"){
+                offset=0; 
+                doSearch();
+            }
+        })
+
+        function doSearch(){
+            const inputValue=searchBox.value.trim().toLowerCase();
+
+            if(!inputValue){
+                fetchAndRender();
+                return ;
+            }
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+
+            fetch(`${apiUrl}/${encodeURIComponent(inputValue)}`)
+                .then(response=>{
+                    if(!response.ok){
+                        throw new Error("查無此寶可夢")
+                    }
+                    return response.json();
+                })
+                .then(pokemonData=>{
+                    renderCards([pokemonData]);
+                })
+                .catch(()=>{
+                    result2.innerHTML=`<p style="text-align:center;color:#000000">查無${inputValue}寶可夢</p>`
+                })
+        }
+
         function fetchAndRender(){
+            searchBox.value="";
             const apiList=`${apiUrl}?limit=${limit}&offset=${offset}`
             fetch(apiList)
             .then(response=>{
@@ -229,11 +266,29 @@
                     prevBtn.disabled = offset === 0;
                     nextBtn.disabled = !item.next;
                 })
-
-
-
-//註解
             })
+        }
+
+        function renderCards(pokemons){
+          let html="";
+            pokemons.forEach(poke=>{
+                const types=poke.types.map(t=>t.type.name).join("、")
+                const held=poke.held_items.length
+                  ?poke.held_items.map(h=>`道具：${h.item.name}`).join("、")
+                  :"無持有道具";
+                  
+                  html+=`
+                    <div class="card">
+                      <h2>#${poke.id}  ${poke.name}</h2>
+                      <img src="${poke.sprites.front_default}" alt="${poke.name}">
+                      <img src="${poke.sprites.front_shiny}" alt="${poke.name}">
+                      <p>類型：${types}</p>
+                      <p>${held}</p>
+                      <button onclick="playerCry('${poke.cries.latest}')"><i class="fas fa-volume-up"></i></button>
+                      </div>`
+            })
+                  document.getElementById("result2").innerHTML = html;
+
         }
         
 function playerCry(url) {
@@ -241,6 +296,6 @@ function playerCry(url) {
   audio.play();
 }
         fetchAndRender();
-        //test
+        
 </script>
 </html>
