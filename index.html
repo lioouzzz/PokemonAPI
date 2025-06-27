@@ -215,6 +215,14 @@
                     }
                     return response.json();
                 })
+                .then(poke=>{
+                  return fetch(`${speciesUrl}/${poke.id}}`)
+                  .then(species=>{
+                    species.name.find(n=>n.language.name==="zh-Hant")
+                    poke.localName=zh?zh.name:poke.name;
+                    return poke;
+                  })
+                })
                 .then(pokemonData=>{
                     renderCards([pokemonData]);
                 })
@@ -242,7 +250,17 @@
                             if(!res.ok) throw new Error(`抓${i.name}失敗`)
                             return res.json()  //result網址promise
                         })
-                    
+
+                        .then(poke=>{
+                          return fetch(poke.species.url)
+                          .then(r=>r.json())
+                          .then(species=>{
+                            const zh=species.names.find(n=>n.language.name==="zh-Hant")
+                            poke.localName=zh?zh.name:poke.name;
+                            return poke;
+                          })
+                        })
+                        
                 )
                 return Promise.all(detailPromises)
                 .then(allDetails=>{
@@ -253,7 +271,7 @@
                     let html=""
                     allDetails.forEach(p=>{
                         html+=`<div class="card">
-                            <h2>#${p.id} ${p.name}</h2>
+                          <h2>#${p.id} ${p.name} ${p.localName}</h2>
                             <img src="${p.sprites.front_default}" alt="${p.name}">
                             <img src="${p.sprites.front_shiny}" alt="${p.name}">
                             <p>類型：${p.types.map(t => t.type.name).join('、')}</p>
@@ -279,7 +297,7 @@
                   
                   html+=`
                     <div class="card">
-                      <h2>#${poke.id}  ${poke.name}</h2>
+                      <h2>#${poke.id} ${poke.name}（${poke.localName || poke.name}）</h2>
                       <img src="${poke.sprites.front_default}" alt="${poke.name}">
                       <img src="${poke.sprites.front_shiny}" alt="${poke.name}">
                       <p>類型：${types}</p>
