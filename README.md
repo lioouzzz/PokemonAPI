@@ -12,10 +12,6 @@
 - Fetch API（串接 PokeAPI）
 - Font Awesome 圖示 + Google Fonts 字型
 
-## 使用方式
-1. 開啟 `index.html`
-2. 輸入寶可夢名稱（英文）或直接瀏覽清單
-3. 點擊按鈕播放叫聲
 
 
 ---
