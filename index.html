@@ -9,8 +9,8 @@
 
         <style>
       :root {
-        --primary: #fad02a; 
-        --secondary: #78afdc; 
+        --primary: #f4ae53; 
+        --secondary: #4c8bcd; 
         --bg: #f5f7fa;
         --radius: 1rem;
         --shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
@@ -147,24 +147,6 @@
     const test="https://pokeapi.co/api/v2/pokemon"
     const pokemon='pikachu'
 
-     fetch(`${test}/${pokemon}`)
-         .then(response=>{
-             if(!response.ok){
-                throw new Error("查無此寶可夢")
-           }
-             return response.json();
-         })
-         .then(ob=>{
-            console.log(ob)
-    //         document.getElementById("result").innerHTML=`
-    //         <h2>${object.name}</h2>
-    //         <img src="${object.sprites.front_default}" alt="${object.name}">
-    //         `
-        })
-         .catch(error=>{
-            console.log("錯誤")
-         })
-
 
         const apiUrl="https://pokeapi.co/api/v2/pokemon"
 
@@ -187,52 +169,10 @@
 
         }
 
-        const searchBox=document.getElementById("searchBox")
         const speciesUrl="https://pokeapi.co/api/v2/pokemon-species"
 
-                // 搜尋功能
-        searchBox.addEventListener("keypress",e=>{
-            if(e.key==="Enter"){
-                offset=0; 
-                doSearch();
-            }
-        })
-
-        function doSearch(){
-            const inputValue=searchBox.value.trim().toLowerCase();
-
-            if(!inputValue){
-                fetchAndRender();
-                return ;
-            }
-            prevBtn.disabled = true;
-            nextBtn.disabled = true;
-
-            fetch(`${apiUrl}/${encodeURIComponent(inputValue)}`)
-                .then(response=>{
-                    if(!response.ok){
-                        throw new Error("查無此寶可夢")
-                    }
-                    return response.json();
-                })
-                .then(poke=>{
-                  return fetch(`${speciesUrl}/${poke.id}}`)
-                  .then(species=>{
-                    species.name.find(n=>n.language.name==="zh-Hant")
-                    poke.localName=zh?zh.name:poke.name;
-                    return poke;
-                  })
-                })
-                .then(pokemonData=>{
-                    renderCards([pokemonData]);
-                })
-                .catch(()=>{
-                    result2.innerHTML=`<p style="text-align:center;color:#000000">查無${inputValue}寶可夢</p>`
-                })
-        }
 
         function fetchAndRender(){
-            searchBox.value="";
             const apiList=`${apiUrl}?limit=${limit}&offset=${offset}`
             fetch(apiList)
             .then(response=>{
@@ -297,7 +237,7 @@
                   
                   html+=`
                     <div class="card">
-                      <h2>#${poke.id} ${poke.name}（${poke.localName || poke.name}）</h2>
+                      <h2>#${poke.id} ${poke.localName}（${poke.Name || poke.name}）</h2>
                       <img src="${poke.sprites.front_default}" alt="${poke.name}">
                       <img src="${poke.sprites.front_shiny}" alt="${poke.name}">
                       <p>類型：${types}</p>
