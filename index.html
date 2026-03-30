@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon API</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --primary: #0e78be; 
+            --secondary:#e4ad23;
+            --radius:1rem
+        }
+        body {
+            background: linear-gradient(0.75turn, #ddffce,#e3f5f5d8);
+        }
+
+        .card {
+            background: linear-gradient(1.5turn, #ffffffcc,#ffffff95,#ffffff95);
+            border-radius: var(--radius);
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin: 1rem 0;
+            width: 220px;
+            min-width: 220px;
+            max-width: 220px;
+            box-sizing: border-box;
+            position: relative;
+            transition: transform 0.2s ease,border-color 0.2s ease,box-shadow 0.2s ease;
+        }
+        .card .type-badge {
+            position: absolute;
+            top: -20px;
+            right: -5px;
+            border-radius: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            padding: 0.5rem;
+            font-weight: 700;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: #c2c2c2 0px 1px 2px 0px;
+        }
+
+
+    
+        .card:hover {
+            border: #e7a31a 1px solid;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 5px rgba(166, 184, 146, 0.262);
+        }
+
+        .card h2{
+            /* font-family: 'Afacad Quicksand', sans-serif; */
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--primary);
+        }
+  
+        .card img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin:0 auto;
+        }
+        .card p {
+            margin: 0.5rem 0;
+            color: #e4ad23;
+            height: 75px;
+            text-align: center;
+            display: inline;
+            justify-content: center;
+        }
+
+        .card .weakness {
+            background: #c8e7e96c;
+            color: #789ab1e2;
+            height: 160px;
+            border-radius: 10px;
+            padding: 0.4rem ;
+            min-height: 80px;
+            min-width: 150px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            margin: 0.3rem 0rem  ;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            gap: 0.3rem;
+            box-shadow: #c9f1addf 0px 1px 1px 1px;
+        }
+
+        .type-fire { color: #e36363; border: 1px solid #e36363;}
+        .type-water { color: #0e78be; border: 1px solid #0e78be;}
+        .type-grass { color:#7d9f6c; border: 1px solid #7d9f6c;}
+        .type-electric { color: #d5bb0c; border: 1px solid #d5bb0c; }
+        .type-ice { color: #0ba9ba; border: 1px solid #0ba9ba; }
+        .type-fighting { color: #e87832; border: 1px solid #e87832; }
+        .type-poison { color: #c691eb; border: 1px solid #c691eb; }
+        .type-ground { color: #427660; border: 1px solid #427660; }
+        .type-flying { color: #a890f0; border: 1px solid #a890f0; }
+        .type-psychic { color: #f85888; border: 1px solid #f85888; }
+        .type-bug { color: #5db820; border: 1px solid #5db820; }
+        .type-rock { color: #b8a038; border: 1px solid #b8a038; }
+        .type-ghost { color: #705898; border: 1px solid #705898; }
+        .type-dragon { color: #7038f8; border: 1px solid #7038f8; }
+        .type-dark { color: #705848; border: 1px solid #705848; }
+        .type-steel { color: #b8b8d0; border: 1px solid #b8b8d0; }
+        .type-fairy { color: #ee99ac; border: 1px solid #ee99ac; }
+        .type-normal { color: #65665b; border: 1px solid #65665b; }
+
+        .weakness-tag {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.4rem 0.45rem;
+            min-width: 25px;
+            border-radius: 10px;
+            margin: 0;
+            font-size: 0.875rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+
+        .card button {
+            border: none;
+            background: var(--secondary);
+            width: 100%;
+            height: 30px;
+            border-radius: 8%;
+            color: #fff;
+            cursor: pointer;
+            margin-inline: auto;
+        }
+
+        #result2{
+            display: flex;
+            flex-wrap: wrap;
+            gap:1.25rem;
+            justify-content: center;
+        }
+
+        h4{
+            color: #bfbfc3d5;
+            margin:0px;
+            
+        }
+
+        #pokemonType {
+            background-color: #aadb9580;
+            color: #446536df;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+        }
+
+        .card-footer{
+            min-height: 80px;
+            min-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            gap: 0.5rem;
+        }
+
+         .card-footer span {
+            font-size: 0.875rem;
+            color: #3a3a3c;
+            line-height:1.2;
+            background: rgba(255,255,255,0.95);
+            border:1px solid rgba(134, 134, 134, 0.18);
+            border-radius: 0.4rem;
+            padding:0.5rem 0.5rem;
+            text-align:center;
+        } 
+
+        #height { 
+            background: linear-gradient(1.5turn, #ffffffcc,#ffffff95,#ffffff95);
+            color:var(--primary);
+        }
+
+        #weight {
+            background: linear-gradient(1.5turn, #ffffffcc,#ffffff95,#ffffff95);
+            color:var(--secondary);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div id="nav">      
+        <button id="prevBtn">上一頁</button>
+        <button id="nextBtn">下一頁</button>
+    </div>
+    <div id="result2">
+        
+    </div>
+</body>
+<script>
+    const apiUrl="https://pokeapi.co/api/v2/pokemon"
+
+    const limit=24
+    let offset=0
+
+
+    const prevBtn=document.getElementById("prevBtn")
+    const nextBtn=document.getElementById("nextBtn")
+
+    prevBtn.addEventListener("click",()=>{
+        if(offset>0){
+            offset=offset-limit
+            fetchAndRenderTest()
+        }
+
+    })
+
+    nextBtn.addEventListener("click",()=>{
+        offset=offset+limit
+        fetchAndRenderTest()
+    })
+
+     async function fetchAndRenderTest(){
+        const apiList=`${apiUrl}?limit=${limit}&offset=${offset}`
+        const response =  await fetch (apiList)
+        const item= await response.json()
+
+        //console.log("測試fetch",item)
+
+         const itemUrl=item.results.map(i=>i.url)
+
+         const allDetails=[]
+
+         for(let i =0 ;i<itemUrl.length;i++){
+            const fetchItemUrl = await fetch(itemUrl[i])
+            const itemUrlResponse = await fetchItemUrl.json()  
+        
+            //console.log("測試",itemUrlResponse)
+
+            //🌟speices抓取中文name
+            const speciesResponse=await fetch(itemUrlResponse.species.url)
+            const speciesData=await speciesResponse.json()
+            //console.log("測試",speciesData)
+            const data = speciesData.names
+            //console.log('data',data)
+            const result = data.find(d => d.language.name === "zh-hant")
+            //console.log("測試2",result.name)
+            
+            itemUrlResponse.localName=result.name
+
+            //🌟轉換held_item資料
+            for(let j =0 ;j<itemUrlResponse.held_items.length;j++){
+                //console.log('0327',itemUrlResponse.held_items[j].item.url)
+                const heldItem=await fetch(itemUrlResponse.held_items[j].item.url)
+                const heldItemData=await heldItem.json();
+                //console.log("heldItemData",heldItemData)
+                const heldItemName=heldItemData.names;
+                const heldItemZhHant=heldItemName.find(h=>h.language.name==="zh-hant")         
+                itemUrlResponse.held_items[j].item.name =heldItemZhHant.name 
+            }
+
+            //換算體重成公斤
+            itemUrlResponse.weight=itemUrlResponse.weight/10
+
+            
+            
+            //弱點
+            itemUrlResponse.weaknesses=[]
+            for(let k=0;itemUrlResponse.types.length>k;k++){
+                const typeUrl=await fetch(itemUrlResponse.types[k].type.url)
+                const typeJson =await typeUrl.json()
+                console.log('typeJson',typeJson)
+
+                for(let j = 0; j < typeJson.damage_relations.double_damage_from.length; j++){
+                    const damageType = typeJson.damage_relations.double_damage_from[j]
+                    const damageUrl = await fetch(damageType.url)
+                    const damageJson = await damageUrl.json()
+                    console.log('damageJson',damageJson)
+                    const damageName = damageJson.names
+                    
+                    const zhdamageName = damageName.find(d => d.language.name === 'zh-hant')
+                    console.log('zhdamageName',zhdamageName)
+
+                    if(!itemUrlResponse.weaknesses.some(w => w.name === zhdamageName.name)){
+                        itemUrlResponse.weaknesses.push(zhdamageName)
+                    }
+                    
+                }
+            }
+            
+            allDetails.push(itemUrlResponse)
+            
+            let html="";
+
+
+
+            allDetails.forEach(p=>{
+                    console.log('p',p)
+                //🌟中英文屬性對照表
+                const types={
+                    normal: '一般',
+                    fire: '火',
+                    water: '水',
+                    electric: '電',
+                    grass: '草',
+                    ice: '冰',
+                    fighting: '格鬥',
+                    poison: '毒',
+                    ground: '地面',
+                    flying: '飛行',
+                    psychic: '超能力',
+                    bug: '蟲',
+                    rock: '岩石',
+                    ghost: '幽靈',
+                    dragon: '龍',
+                    dark: '惡',
+                    steel: '鋼',
+                    fairy: '妖精'
+                }
+
+                html=html+`
+                    <div class="card">
+                        <div class="type-badge type-${p.types[0].type.name}">${p.types.map(t => types[t.type.name]).join("、")}</div>
+                        <h2>${p.localName}</h2>
+                        <h4>${p.name}</h4>
+                        <img src="${p.sprites.front_default}" alt="${p.name}">
+                        <img src="${p.sprites.back_shiny}" alt="${p.name}">
+                        <p>${p.held_items.length?"持有道具："+p.held_items.map(h=> h.item.name).join("、"):"無持有道具"}</p>
+                       
+                        <div class=weakness>弱點：${p.weaknesses.map(w => `<span class="weakness-tag type-${Object.keys(types).find(key => types[key] === w.name)}">${w.name}</span>`).join("")}</div>
+                        
+                        <div class='card-footer'>
+                            <span id="height">身高:<br/>${p.height}CM</span> </br>
+                            <span id="weight">體重:<br/>${p.weight}KG</span>
+                        </div>
+                        <button onclick="playerCry('${p.cries.latest}')"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    `
+            })  
+
+            //控制上下頁按鈕
+            document.getElementById("result2").innerHTML=html
+            prevBtn.disabled=offset===0
+            nextBtn.disabled=!item.next
+
+         }
+         
+
+        
+    }
+    function playerCry(url) {
+        const audio = new Audio(url);
+        audio.play();
+    }
+    fetchAndRenderTest()
+</script>
+</html>
