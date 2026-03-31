@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bitcount+Grid+Single+Ink:wght@381&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bitcount+Grid+Single+Ink:wght@100..900&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Huninn&family=Noto+Sans+TC:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Alumni+Sans+SC:ital,wght@1,100..900&family=Bitcount+Grid+Single+Ink:wght@100..900&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Huninn&family=Noto+Sans+TC:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         :root{
@@ -17,6 +20,51 @@
         }
         body {
             background: linear-gradient(0.75turn, #ddffce,#e3f5f5d8);
+            margin: 0;
+            padding: 1.5rem 1rem 2rem;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0 1rem;
+            flex-wrap: wrap;
+        }
+
+        #pageInfo {
+            font-family: "Huninn";
+            color: var(--primary);
+            background: rgba(255,255,255,0.9);
+            padding: 0.55rem 1rem;
+            border-radius: 999px;
+            font-weight: 400;
+        }
+
+        .loading {
+            width: 100%;
+            text-align: center;
+            font-family: "Huninn";
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-top: 2rem;
+        }
+
+        #nav button {
+            border: none;
+            background: var(--primary);
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 999px;
+            cursor: pointer;
+            font-family: "Huninn";
+            font-size: 1rem;
+        }
+
+        #nav button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
         }
 
         .card {
@@ -37,7 +85,7 @@
         }
         .card .type-badge {
             position: absolute;
-            top: -20px;
+            top: -25px;
             right: -5px;
             border-radius: 10%;
             display: flex;
@@ -61,18 +109,32 @@
         }
 
         .card h2{
-            /* font-family: 'Afacad Quicksand', sans-serif; */
+            font-family: "Huninn";
+            font-weight: 400;
             font-size: 1.25rem;
-            font-weight: 700;
             margin: 0;
             color: var(--primary);
         }
+        
   
-        .card img {
+        .img-box {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+        }
+
+        .img-box img {
+            position: absolute;
+            inset: 0;
             width: 120px;
             height: 120px;
             object-fit: contain;
-            margin:0 auto;
+        }
+
+        .front_default {
+            opacity: 1;
+            transition: opacity 0.6s ease;
         }
         .card p {
             margin: 0.5rem 0;
@@ -84,6 +146,7 @@
         }
 
         .card .weakness {
+            font-family: "Huninn";
             background: #c8e7e96c;
             color: #789ab1e2;
             height: 160px;
@@ -91,7 +154,7 @@
             padding: 0.4rem ;
             min-height: 80px;
             min-width: 150px;
-            font-weight: 600;
+            font-weight: 400;
             letter-spacing: 0.03em;
             margin: 0.3rem 0rem  ;
             display: flex;
@@ -104,7 +167,7 @@
             box-shadow: #c9f1addf 0px 1px 1px 1px;
         }
 
-        .type-fire { color: #e36363; border: 1px solid #e36363;}
+        .type-fire { color: #e36363; border: 1px solid #e36363; }
         .type-water { color: #0e78be; border: 1px solid #0e78be;}
         .type-grass { color:#7d9f6c; border: 1px solid #7d9f6c;}
         .type-electric { color: #d5bb0c; border: 1px solid #d5bb0c; }
@@ -156,9 +219,14 @@
         }
 
         h4{
+            font-family: "Alumni Sans SC", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+            "slnt" 0;
             color: #bfbfc3d5;
-            margin:0px;
-            
+            margin: 0;
+            padding: 0;
         }
 
         #pokemonType {
@@ -178,6 +246,8 @@
         }
 
          .card-footer span {
+            
+            font-weight: 500;
             font-size: 0.875rem;
             color: #3a3a3c;
             line-height:1.2;
@@ -189,25 +259,49 @@
         } 
 
         #height { 
+            font-family: "Alumni Sans SC", sans-serif;
             background: linear-gradient(1.5turn, #ffffffcc,#ffffff95,#ffffff95);
             color:var(--primary);
         }
 
         #weight {
+            font-family: "Alumni Sans SC", sans-serif;
             background: linear-gradient(1.5turn, #ffffffcc,#ffffff95,#ffffff95);
             color:var(--secondary);
+        }
+
+        .back_shiny {
+            opacity: 0;
+            transform: scale(0.92);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .card:hover .back_shiny {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .card:hover .front_default {
+            opacity: 0;
+        }
+
+        #held-items {
+            font-family: "Huninn";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
         }
         
     </style>
 </head>
 <body>
+    <div id="result2">
+        
+    </div>
 
     <div id="nav">      
         <button id="prevBtn">上一頁</button>
+        <span id="pageInfo">第 1 頁</span>
         <button id="nextBtn">下一頁</button>
-    </div>
-    <div id="result2">
-        
     </div>
 </body>
 <script>
@@ -219,21 +313,30 @@
 
     const prevBtn=document.getElementById("prevBtn")
     const nextBtn=document.getElementById("nextBtn")
+    const pageInfo=document.getElementById("pageInfo")
+    const resultBox=document.getElementById("result2")
 
     prevBtn.addEventListener("click",()=>{
         if(offset>0){
             offset=offset-limit
-            fetchAndRenderTest()
+            fetchAndRender()
         }
 
     })
 
     nextBtn.addEventListener("click",()=>{
         offset=offset+limit
-        fetchAndRenderTest()
+        fetchAndRender()
     })
 
-     async function fetchAndRenderTest(){
+     async function fetchAndRender(){
+        
+        const currentPage = Math.floor(offset / limit) + 1
+        pageInfo.textContent=`第 ${currentPage} 頁載入中...`
+        prevBtn.disabled=true
+        nextBtn.disabled=true
+        resultBox.innerHTML=`<p class="loading">載入中...</p>`
+
         const apiList=`${apiUrl}?limit=${limit}&offset=${offset}`
         const response =  await fetch (apiList)
         const item= await response.json()
@@ -309,6 +412,7 @@
 
             allDetails.forEach(p=>{
                     console.log('p',p)
+                    
                 //🌟中英文屬性對照表
                 const types={
                     normal: '一般',
@@ -336,9 +440,11 @@
                         <div class="type-badge type-${p.types[0].type.name}">${p.types.map(t => types[t.type.name]).join("、")}</div>
                         <h2>${p.localName}</h2>
                         <h4>${p.name}</h4>
-                        <img src="${p.sprites.front_default}" alt="${p.name}">
-                        <img src="${p.sprites.back_shiny}" alt="${p.name}">
-                        <p>${p.held_items.length?"持有道具："+p.held_items.map(h=> h.item.name).join("、"):"無持有道具"}</p>
+                        <div class="img-box">
+                            <img class="front_default" src="${p.sprites.front_default}" alt="${p.name}">
+                            <img class="back_shiny" src="${p.sprites.back_shiny}" alt="${p.name}">
+                        </div>
+                        <p id="held-items">${p.held_items.length?"持有道具："+p.held_items.map(h=> h.item.name).join("、"):"無持有道具"}</p>
                        
                         <div class=weakness>弱點：${p.weaknesses.map(w => `<span class="weakness-tag type-${Object.keys(types).find(key => types[key] === w.name)}">${w.name}</span>`).join("")}</div>
                         
@@ -352,7 +458,8 @@
             })  
 
             //控制上下頁按鈕
-            document.getElementById("result2").innerHTML=html
+            resultBox.innerHTML=html
+            pageInfo.textContent=`第 ${currentPage} 頁/共 ${Math.ceil(item.count / limit)} 頁`
             prevBtn.disabled=offset===0
             nextBtn.disabled=!item.next
 
@@ -365,6 +472,6 @@
         const audio = new Audio(url);
         audio.play();
     }
-    fetchAndRenderTest()
+    fetchAndRender()
 </script>
 </html>
