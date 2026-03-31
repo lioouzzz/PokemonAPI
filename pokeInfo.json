@@ -1,0 +1,2419 @@
+{
+  "count": 1350,
+  "next": null,
+  "previous": null,
+  "results": [
+    { "name": "bulbasaur", "localName": "妙蛙種子" },
+    { "name": "ivysaur", "localName": "妙蛙草" },
+    { "name": "venusaur", "localName": "妙蛙花" },
+    { "name": "charmander", "localName": "小火龍" },
+    { "name": "charmeleon", "localName": "火恐龍" },
+    { "name": "charizard", "localName": "噴火龍" },
+    { "name": "squirtle", "localName": "傑尼龜" },
+    { "name": "wartortle", "localName": "卡咪龜" },
+    { "name": "blastoise", "localName": "水箭龜" },
+    { "name": "caterpie", "localName": "綠毛蟲" },
+    { "name": "metapod", "localName": "鐵甲蛹" },
+    { "name": "butterfree", "localName": "巴大蝶" },
+    { "name": "weedle", "localName": "獨角蟲" },
+    { "name": "kakuna", "localName": "鐵殼蛹" },
+    { "name": "beedrill", "localName": "大針蜂" },
+    { "name": "pidgey", "localName": "波波" },
+    { "name": "pidgeotto", "localName": "比比鳥" },
+    { "name": "pidgeot", "localName": "大比鳥" },
+    { "name": "rattata", "localName": "小拉達" },
+    { "name": "raticate", "localName": "拉達" },
+    { "name": "spearow", "localName": "烈雀" },
+    { "name": "fearow", "localName": "大嘴雀" },
+    { "name": "ekans", "localName": "阿柏蛇" },
+    { "name": "arbok", "localName": "阿柏怪" },
+    { "name": "pikachu", "localName": "皮卡丘" },
+    { "name": "raichu", "localName": "雷丘" },
+    { "name": "sandshrew", "localName": "穿山鼠" },
+    { "name": "sandslash", "localName": "穿山王" },
+    { "name": "nidoran-f", "localName": "尼多蘭" },
+    { "name": "nidorina", "localName": "尼多娜" },
+    { "name": "nidoqueen", "localName": "尼多后" },
+    { "name": "nidoran-m", "localName": "尼多朗" },
+    { "name": "nidorino", "localName": "尼多力諾" },
+    { "name": "nidoking", "localName": "尼多王" },
+    { "name": "clefairy", "localName": "皮皮" },
+    { "name": "clefable", "localName": "皮可西" },
+    { "name": "vulpix", "localName": "六尾" },
+    { "name": "ninetales", "localName": "九尾" },
+    { "name": "jigglypuff", "localName": "胖丁" },
+    { "name": "wigglytuff", "localName": "胖可丁" },
+    { "name": "zubat", "localName": "超音蝠" },
+    { "name": "golbat", "localName": "大嘴蝠" },
+    { "name": "oddish", "localName": "走路草" },
+    { "name": "gloom", "localName": "臭臭花" },
+    { "name": "vileplume", "localName": "霸王花" },
+    { "name": "paras", "localName": "派拉斯" },
+    { "name": "parasect", "localName": "派拉斯特" },
+    { "name": "venonat", "localName": "毛球" },
+    { "name": "venomoth", "localName": "摩魯蛾" },
+    { "name": "diglett", "localName": "地鼠" },
+    { "name": "dugtrio", "localName": "三地鼠" },
+    { "name": "meowth", "localName": "喵喵" },
+    { "name": "persian", "localName": "貓老大" },
+    { "name": "psyduck", "localName": "可達鴨" },
+    { "name": "golduck", "localName": "哥達鴨" },
+    { "name": "mankey", "localName": "猴怪" },
+    { "name": "primeape", "localName": "火爆猴" },
+    { "name": "growlithe", "localName": "卡蒂狗" },
+    { "name": "arcanine", "localName": "風速狗" },
+    { "name": "poliwag", "localName": "蚊香蝌蚪" },
+    { "name": "poliwhirl", "localName": "蚊香君" },
+    { "name": "poliwrath", "localName": "蚊香泳士" },
+    { "name": "abra", "localName": "凱西" },
+    { "name": "kadabra", "localName": "勇基拉" },
+    { "name": "alakazam", "localName": "胡地" },
+    { "name": "machop", "localName": "腕力" },
+    { "name": "machoke", "localName": "豪力" },
+    { "name": "machamp", "localName": "怪力" },
+    { "name": "bellsprout", "localName": "喇叭芽" },
+    { "name": "weepinbell", "localName": "口呆花" },
+    { "name": "victreebel", "localName": "大食花" },
+    { "name": "tentacool", "localName": "瑪瑙水母" },
+    { "name": "tentacruel", "localName": "毒刺水母" },
+    { "name": "geodude", "localName": "小拳石" },
+    { "name": "graveler", "localName": "隆隆石" },
+    { "name": "golem", "localName": "隆隆岩" },
+    { "name": "ponyta", "localName": "小火馬" },
+    { "name": "rapidash", "localName": "烈焰馬" },
+    { "name": "slowpoke", "localName": "呆呆獸" },
+    { "name": "slowbro", "localName": "呆殼獸" },
+    { "name": "magnemite", "localName": "小磁怪" },
+    { "name": "magneton", "localName": "三合一磁怪" },
+    { "name": "farfetchd", "localName": "大葱鸭" },
+    { "name": "doduo", "localName": "嘟嘟" },
+    { "name": "dodrio", "localName": "嘟嘟利" },
+    { "name": "seel", "localName": "小海獅" },
+    { "name": "dewgong", "localName": "白海獅" },
+    { "name": "grimer", "localName": "臭泥" },
+    { "name": "muk", "localName": "臭臭泥" },
+    { "name": "shellder", "localName": "大舌貝" },
+    { "name": "cloyster", "localName": "刺甲貝" },
+    { "name": "gastly", "localName": "鬼斯" },
+    { "name": "haunter", "localName": "鬼斯通" },
+    { "name": "gengar", "localName": "耿鬼" },
+    { "name": "onix", "localName": "大岩蛇" },
+    { "name": "drowzee", "localName": "催眠貘" },
+    { "name": "hypno", "localName": "引夢貘" },
+    { "name": "krabby", "localName": "小拳石" },
+    { "name": "kingler", "localName": "巨鉗蟹" },
+    { "name": "voltorb", "localName": "100/" },
+    { "name": "electrode", "localName": "101/" },
+    { "name": "exeggcute", "localName": "102/" },
+    { "name": "exeggutor", "localName": "103/" },
+    { "name": "cubone", "localName": "104/" },
+    { "name": "marowak", "localName": "105/" },
+    { "name": "hitmonlee", "localName": "106/" },
+    { "name": "hitmonchan", "localName": "107/" },
+    { "name": "lickitung", "localName": "108/" },
+    { "name": "koffing", "localName": "109/" },
+    { "name": "weezing", "localName": "110/" },
+    { "name": "rhyhorn", "localName": "111/" },
+    { "name": "rhydon", "localName": "112/" },
+    { "name": "chansey", "localName": "113/" },
+    { "name": "tangela", "localName": "114/" },
+    { "name": "kangaskhan", "localName": "115/" },
+    { "name": "horsea", "localName": "116/" },
+    { "name": "seadra", "localName": "117/" },
+    { "name": "goldeen", "localName": "118/" },
+    { "name": "seaking", "localName": "119/" },
+    { "name": "staryu", "localName": "120/" },
+    { "name": "starmie", "localName": "121/" },
+    { "name": "mr-mime", "localName": "122/" },
+    { "name": "scyther", "localName": "123/" },
+    { "name": "jynx", "localName": "124/" },
+    { "name": "electabuzz", "localName": "125/" },
+    { "name": "magmar", "localName": "126/" },
+    { "name": "pinsir", "localName": "127/" },
+    { "name": "tauros", "localName": "128/" },
+    { "name": "magikarp", "localName": "129/" },
+    { "name": "gyarados", "localName": "130/" },
+    { "name": "lapras", "localName": "131/" },
+    { "name": "ditto", "localName": "132/" },
+    { "name": "eevee", "localName": "133/" },
+    { "name": "vaporeon", "localName": "134/" },
+    { "name": "jolteon", "localName": "135/" },
+    { "name": "flareon", "localName": "136/" },
+    { "name": "porygon", "localName": "137/" },
+    { "name": "omanyte", "localName": "138/" },
+    { "name": "omastar", "localName": "139/" },
+    { "name": "kabuto", "localName": "140/" },
+    { "name": "kabutops", "localName": "141/" },
+    { "name": "aerodactyl", "localName": "142/" },
+    { "name": "snorlax", "localName": "143/" },
+    { "name": "articuno", "localName": "144/" },
+    { "name": "zapdos", "localName": "145/" },
+    { "name": "moltres", "localName": "146/" },
+    { "name": "dratini", "localName": "147/" },
+    { "name": "dragonair", "localName": "148/" },
+    { "name": "dragonite", "localName": "149/" },
+    { "name": "mewtwo", "localName": "150/" },
+    { "name": "mew", "localName": "151/" },
+    { "name": "chikorita", "localName": "152/" },
+    { "name": "bayleef", "localName": "153/" },
+    { "name": "meganium", "localName": "154/" },
+    { "name": "cyndaquil", "localName": "155/" },
+    { "name": "quilava", "localName": "156/" },
+    { "name": "typhlosion", "localName": "157/" },
+    { "name": "totodile", "localName": "158/" },
+    { "name": "croconaw", "localName": "159/" },
+    { "name": "feraligatr", "localName": "160/" },
+    { "name": "sentret", "localName": "161/" },
+    { "name": "furret", "localName": "162/" },
+    { "name": "hoothoot", "localName": "163/" },
+    { "name": "noctowl", "localName": "164/" },
+    { "name": "ledyba", "localName": "165/" },
+    { "name": "ledian", "localName": "166/" },
+    { "name": "spinarak", "localName": "167/" },
+    { "name": "ariados", "localName": "168/" },
+    { "name": "crobat", "localName": "169/" },
+    { "name": "chinchou", "localName": "170/" },
+    { "name": "lanturn", "localName": "171/" },
+    { "name": "pichu", "localName": "172/" },
+    { "name": "cleffa", "localName": "173/" },
+    { "name": "igglybuff", "localName": "174/" },
+    { "name": "togepi", "localName": "175/" },
+    { "name": "togetic", "localName": "176/" },
+    { "name": "natu", "localName": "177/" },
+    { "name": "xatu", "localName": "178/" },
+    { "name": "mareep", "localName": "179/" },
+    { "name": "flaaffy", "localName": "180/" },
+    { "name": "ampharos", "localName": "181/" },
+    { "name": "bellossom", "localName": "182/" },
+    { "name": "marill", "localName": "183/" },
+    { "name": "azumarill", "localName": "184/" },
+    { "name": "sudowoodo", "localName": "185/" },
+    { "name": "politoed", "localName": "186/" },
+    { "name": "hoppip", "localName": "187/" },
+    { "name": "skiploom", "localName": "188/" },
+    { "name": "jumpluff", "localName": "189/" },
+    { "name": "aipom", "localName": "190/" },
+    { "name": "sunkern", "localName": "191/" },
+    { "name": "sunflora", "localName": "192/" },
+    { "name": "yanma", "localName": "193/" },
+    { "name": "wooper", "localName": "194/" },
+    { "name": "quagsire", "localName": "195/" },
+    { "name": "espeon", "localName": "196/" },
+    { "name": "umbreon", "localName": "197/" },
+    { "name": "murkrow", "localName": "198/" },
+    { "name": "slowking", "localName": "199/" },
+    { "name": "misdreavus", "localName": "200/" },
+    { "name": "unown", "localName": "201/" },
+    { "name": "wobbuffet", "localName": "202/" },
+    { "name": "girafarig", "localName": "203/" },
+    { "name": "pineco", "localName": "204/" },
+    { "name": "forretress", "localName": "205/" },
+    { "name": "dunsparce", "localName": "206/" },
+    { "name": "gligar", "localName": "207/" },
+    { "name": "steelix", "localName": "208/" },
+    { "name": "snubbull", "localName": "209/" },
+    { "name": "granbull", "localName": "210/" },
+    { "name": "qwilfish", "localName": "211/" },
+    { "name": "scizor", "localName": "212/" },
+    { "name": "shuckle", "localName": "213/" },
+    { "name": "heracross", "localName": "214/" },
+    { "name": "sneasel", "localName": "215/" },
+    { "name": "teddiursa", "localName": "216/" },
+    { "name": "ursaring", "localName": "217/" },
+    { "name": "slugma", "localName": "218/" },
+    { "name": "magcargo", "localName": "219/" },
+    { "name": "swinub", "localName": "220/" },
+    { "name": "piloswine", "localName": "221/" },
+    { "name": "corsola", "localName": "222/" },
+    { "name": "remoraid", "localName": "223/" },
+    { "name": "octillery", "localName": "224/" },
+    { "name": "delibird", "localName": "225/" },
+    { "name": "mantine", "localName": "226/" },
+    { "name": "skarmory", "localName": "227/" },
+    { "name": "houndour", "localName": "228/" },
+    { "name": "houndoom", "localName": "229/" },
+    { "name": "kingdra", "localName": "230/" },
+    { "name": "phanpy", "localName": "231/" },
+    { "name": "donphan", "localName": "232/" },
+    { "name": "porygon2", "localName": "233/" },
+    { "name": "stantler", "localName": "234/" },
+    { "name": "smeargle", "localName": "235/" },
+    { "name": "tyrogue", "localName": "236/" },
+    { "name": "hitmontop", "localName": "237/" },
+    { "name": "smoochum", "localName": "238/" },
+    { "name": "elekid", "localName": "239/" },
+    { "name": "magby", "localName": "240/" },
+    { "name": "miltank", "localName": "241/" },
+    { "name": "blissey", "localName": "242/" },
+    { "name": "raikou", "localName": "243/" },
+    { "name": "entei", "localName": "244/" },
+    { "name": "suicune", "localName": "245/" },
+    { "name": "larvitar", "localName": "246/" },
+    { "name": "pupitar", "localName": "247/" },
+    { "name": "tyranitar", "localName": "248/" },
+    { "name": "lugia", "localName": "249/" },
+    { "name": "ho-oh", "localName": "250/" },
+    { "name": "celebi", "localName": "251/" },
+    { "name": "treecko", "localName": "252/" },
+    { "name": "grovyle", "localName": "253/" },
+    { "name": "sceptile", "localName": "254/" },
+    { "name": "torchic", "localName": "255/" },
+    { "name": "combusken", "localName": "256/" },
+    { "name": "blaziken", "localName": "257/" },
+    { "name": "mudkip", "localName": "258/" },
+    { "name": "marshtomp", "localName": "259/" },
+    { "name": "swampert", "localName": "260/" },
+    { "name": "poochyena", "localName": "261/" },
+    { "name": "mightyena", "localName": "262/" },
+    { "name": "zigzagoon", "localName": "263/" },
+    { "name": "linoone", "localName": "264/" },
+    { "name": "wurmple", "localName": "265/" },
+    { "name": "silcoon", "localName": "266/" },
+    { "name": "beautifly", "localName": "267/" },
+    { "name": "cascoon", "localName": "268/" },
+    { "name": "dustox", "localName": "269/" },
+    { "name": "lotad", "localName": "270/" },
+    { "name": "lombre", "localName": "271/" },
+    { "name": "ludicolo", "localName": "272/" },
+    { "name": "seedot", "localName": "273/" },
+    { "name": "nuzleaf", "localName": "274/" },
+    { "name": "shiftry", "localName": "275/" },
+    { "name": "taillow", "localName": "276/" },
+    { "name": "swellow", "localName": "277/" },
+    { "name": "wingull", "localName": "278/" },
+    { "name": "pelipper", "localName": "279/" },
+    { "name": "ralts", "localName": "280/" },
+    { "name": "kirlia", "localName": "281/" },
+    { "name": "gardevoir", "localName": "282/" },
+    { "name": "surskit", "localName": "283/" },
+    { "name": "masquerain", "localName": "284/" },
+    { "name": "shroomish", "localName": "285/" },
+    { "name": "breloom", "localName": "286/" },
+    { "name": "slakoth", "localName": "287/" },
+    { "name": "vigoroth", "localName": "288/" },
+    { "name": "slaking", "localName": "289/" },
+    { "name": "nincada", "localName": "290/" },
+    { "name": "ninjask", "localName": "291/" },
+    { "name": "shedinja", "localName": "292/" },
+    { "name": "whismur", "localName": "293/" },
+    { "name": "loudred", "localName": "294/" },
+    { "name": "exploud", "localName": "295/" },
+    { "name": "makuhita", "localName": "296/" },
+    { "name": "hariyama", "localName": "297/" },
+    { "name": "azurill", "localName": "298/" },
+    { "name": "nosepass", "localName": "299/" },
+    { "name": "skitty", "localName": "300/" },
+    { "name": "delcatty", "localName": "301/" },
+    { "name": "sableye", "localName": "302/" },
+    { "name": "mawile", "localName": "303/" },
+    { "name": "aron", "localName": "304/" },
+    { "name": "lairon", "localName": "305/" },
+    { "name": "aggron", "localName": "306/" },
+    { "name": "meditite", "localName": "307/" },
+    { "name": "medicham", "localName": "308/" },
+    { "name": "electrike", "localName": "309/" },
+    { "name": "manectric", "localName": "310/" },
+    { "name": "plusle", "localName": "311/" },
+    { "name": "minun", "localName": "312/" },
+    { "name": "volbeat", "localName": "313/" },
+    { "name": "illumise", "localName": "314/" },
+    { "name": "roselia", "localName": "315/" },
+    { "name": "gulpin", "localName": "316/" },
+    { "name": "swalot", "localName": "317/" },
+    { "name": "carvanha", "localName": "318/" },
+    { "name": "sharpedo", "localName": "319/" },
+    { "name": "wailmer", "localName": "320/" },
+    { "name": "wailord", "localName": "321/" },
+    { "name": "numel", "localName": "322/" },
+    { "name": "camerupt", "localName": "323/" },
+    { "name": "torkoal", "localName": "324/" },
+    { "name": "spoink", "localName": "325/" },
+    { "name": "grumpig", "localName": "326/" },
+    { "name": "spinda", "localName": "327/" },
+    { "name": "trapinch", "localName": "328/" },
+    { "name": "vibrava", "localName": "329/" },
+    { "name": "flygon", "localName": "330/" },
+    { "name": "cacnea", "localName": "331/" },
+    { "name": "cacturne", "localName": "332/" },
+    { "name": "swablu", "localName": "333/" },
+    { "name": "altaria", "localName": "334/" },
+    { "name": "zangoose", "localName": "335/" },
+    { "name": "seviper", "localName": "336/" },
+    { "name": "lunatone", "localName": "337/" },
+    { "name": "solrock", "localName": "338/" },
+    { "name": "barboach", "localName": "339/" },
+    { "name": "whiscash", "localName": "340/" },
+    { "name": "corphish", "localName": "341/" },
+    { "name": "crawdaunt", "localName": "342/" },
+    { "name": "baltoy", "localName": "343/" },
+    { "name": "claydol", "localName": "344/" },
+    { "name": "lileep", "localName": "345/" },
+    { "name": "cradily", "localName": "346/" },
+    { "name": "anorith", "localName": "347/" },
+    { "name": "armaldo", "localName": "348/" },
+    { "name": "feebas", "localName": "349/" },
+    { "name": "milotic", "localName": "350/" },
+    { "name": "castform", "localName": "351/" },
+    { "name": "kecleon", "localName": "352/" },
+    { "name": "shuppet", "localName": "353/" },
+    { "name": "banette", "localName": "354/" },
+    { "name": "duskull", "localName": "355/" },
+    { "name": "dusclops", "localName": "356/" },
+    { "name": "tropius", "localName": "357/" },
+    { "name": "chimecho", "localName": "358/" },
+    { "name": "absol", "localName": "359/" },
+    { "name": "wynaut", "localName": "360/" },
+    { "name": "snorunt", "localName": "361/" },
+    { "name": "glalie", "localName": "362/" },
+    { "name": "spheal", "localName": "363/" },
+    { "name": "sealeo", "localName": "364/" },
+    { "name": "walrein", "localName": "365/" },
+    { "name": "clamperl", "localName": "366/" },
+    { "name": "huntail", "localName": "367/" },
+    { "name": "gorebyss", "localName": "368/" },
+    { "name": "relicanth", "localName": "369/" },
+    { "name": "luvdisc", "localName": "370/" },
+    { "name": "bagon", "localName": "371/" },
+    { "name": "shelgon", "localName": "372/" },
+    { "name": "salamence", "localName": "373/" },
+    { "name": "beldum", "localName": "374/" },
+    { "name": "metang", "localName": "375/" },
+    { "name": "metagross", "localName": "376/" },
+    { "name": "regirock", "localName": "377/" },
+    { "name": "regice", "localName": "378/" },
+    { "name": "registeel", "localName": "379/" },
+    { "name": "latias", "localName": "380/" },
+    { "name": "latios", "localName": "381/" },
+    { "name": "kyogre", "localName": "382/" },
+    { "name": "groudon", "localName": "383/" },
+    { "name": "rayquaza", "localName": "384/" },
+    { "name": "jirachi", "localName": "385/" },
+    {
+      "name": "deoxys-normal",
+      "localName": "386/"
+    },
+    { "name": "turtwig", "localName": "387/" },
+    { "name": "grotle", "localName": "388/" },
+    { "name": "torterra", "localName": "389/" },
+    { "name": "chimchar", "localName": "390/" },
+    { "name": "monferno", "localName": "391/" },
+    { "name": "infernape", "localName": "392/" },
+    { "name": "piplup", "localName": "393/" },
+    { "name": "prinplup", "localName": "394/" },
+    { "name": "empoleon", "localName": "395/" },
+    { "name": "starly", "localName": "396/" },
+    { "name": "staravia", "localName": "397/" },
+    { "name": "staraptor", "localName": "398/" },
+    { "name": "bidoof", "localName": "399/" },
+    { "name": "bibarel", "localName": "400/" },
+    { "name": "kricketot", "localName": "401/" },
+    { "name": "kricketune", "localName": "402/" },
+    { "name": "shinx", "localName": "403/" },
+    { "name": "luxio", "localName": "404/" },
+    { "name": "luxray", "localName": "405/" },
+    { "name": "budew", "localName": "406/" },
+    { "name": "roserade", "localName": "407/" },
+    { "name": "cranidos", "localName": "408/" },
+    { "name": "rampardos", "localName": "409/" },
+    { "name": "shieldon", "localName": "410/" },
+    { "name": "bastiodon", "localName": "411/" },
+    { "name": "burmy", "localName": "412/" },
+    {
+      "name": "wormadam-plant",
+      "localName": "413/"
+    },
+    { "name": "mothim", "localName": "414/" },
+    { "name": "combee", "localName": "415/" },
+    { "name": "vespiquen", "localName": "416/" },
+    { "name": "pachirisu", "localName": "417/" },
+    { "name": "buizel", "localName": "418/" },
+    { "name": "floatzel", "localName": "419/" },
+    { "name": "cherubi", "localName": "420/" },
+    { "name": "cherrim", "localName": "421/" },
+    { "name": "shellos", "localName": "422/" },
+    { "name": "gastrodon", "localName": "423/" },
+    { "name": "ambipom", "localName": "424/" },
+    { "name": "drifloon", "localName": "425/" },
+    { "name": "drifblim", "localName": "426/" },
+    { "name": "buneary", "localName": "427/" },
+    { "name": "lopunny", "localName": "428/" },
+    { "name": "mismagius", "localName": "429/" },
+    { "name": "honchkrow", "localName": "430/" },
+    { "name": "glameow", "localName": "431/" },
+    { "name": "purugly", "localName": "432/" },
+    { "name": "chingling", "localName": "433/" },
+    { "name": "stunky", "localName": "434/" },
+    { "name": "skuntank", "localName": "435/" },
+    { "name": "bronzor", "localName": "436/" },
+    { "name": "bronzong", "localName": "437/" },
+    { "name": "bonsly", "localName": "438/" },
+    { "name": "mime-jr", "localName": "439/" },
+    { "name": "happiny", "localName": "440/" },
+    { "name": "chatot", "localName": "441/" },
+    { "name": "spiritomb", "localName": "442/" },
+    { "name": "gible", "localName": "443/" },
+    { "name": "gabite", "localName": "444/" },
+    { "name": "garchomp", "localName": "445/" },
+    { "name": "munchlax", "localName": "446/" },
+    { "name": "riolu", "localName": "447/" },
+    { "name": "lucario", "localName": "448/" },
+    { "name": "hippopotas", "localName": "449/" },
+    { "name": "hippowdon", "localName": "450/" },
+    { "name": "skorupi", "localName": "451/" },
+    { "name": "drapion", "localName": "452/" },
+    { "name": "croagunk", "localName": "453/" },
+    { "name": "toxicroak", "localName": "454/" },
+    { "name": "carnivine", "localName": "455/" },
+    { "name": "finneon", "localName": "456/" },
+    { "name": "lumineon", "localName": "457/" },
+    { "name": "mantyke", "localName": "458/" },
+    { "name": "snover", "localName": "459/" },
+    { "name": "abomasnow", "localName": "460/" },
+    { "name": "weavile", "localName": "461/" },
+    { "name": "magnezone", "localName": "462/" },
+    { "name": "lickilicky", "localName": "463/" },
+    { "name": "rhyperior", "localName": "464/" },
+    { "name": "tangrowth", "localName": "465/" },
+    { "name": "electivire", "localName": "466/" },
+    { "name": "magmortar", "localName": "467/" },
+    { "name": "togekiss", "localName": "468/" },
+    { "name": "yanmega", "localName": "469/" },
+    { "name": "leafeon", "localName": "470/" },
+    { "name": "glaceon", "localName": "471/" },
+    { "name": "gliscor", "localName": "472/" },
+    { "name": "mamoswine", "localName": "473/" },
+    { "name": "porygon-z", "localName": "474/" },
+    { "name": "gallade", "localName": "475/" },
+    { "name": "probopass", "localName": "476/" },
+    { "name": "dusknoir", "localName": "477/" },
+    { "name": "froslass", "localName": "478/" },
+    { "name": "rotom", "localName": "479/" },
+    { "name": "uxie", "localName": "480/" },
+    { "name": "mesprit", "localName": "481/" },
+    { "name": "azelf", "localName": "482/" },
+    { "name": "dialga", "localName": "483/" },
+    { "name": "palkia", "localName": "484/" },
+    { "name": "heatran", "localName": "485/" },
+    { "name": "regigigas", "localName": "486/" },
+    {
+      "name": "giratina-altered",
+      "localName": "487/"
+    },
+    { "name": "cresselia", "localName": "488/" },
+    { "name": "phione", "localName": "489/" },
+    { "name": "manaphy", "localName": "490/" },
+    { "name": "darkrai", "localName": "491/" },
+    { "name": "shaymin-land", "localName": "492/" },
+    { "name": "arceus", "localName": "493/" },
+    { "name": "victini", "localName": "494/" },
+    { "name": "snivy", "localName": "495/" },
+    { "name": "servine", "localName": "496/" },
+    { "name": "serperior", "localName": "497/" },
+    { "name": "tepig", "localName": "498/" },
+    { "name": "pignite", "localName": "499/" },
+    { "name": "emboar", "localName": "500/" },
+    { "name": "oshawott", "localName": "501/" },
+    { "name": "dewott", "localName": "502/" },
+    { "name": "samurott", "localName": "503/" },
+    { "name": "patrat", "localName": "504/" },
+    { "name": "watchog", "localName": "505/" },
+    { "name": "lillipup", "localName": "506/" },
+    { "name": "herdier", "localName": "507/" },
+    { "name": "stoutland", "localName": "508/" },
+    { "name": "purrloin", "localName": "509/" },
+    { "name": "liepard", "localName": "510/" },
+    { "name": "pansage", "localName": "511/" },
+    { "name": "simisage", "localName": "512/" },
+    { "name": "pansear", "localName": "513/" },
+    { "name": "simisear", "localName": "514/" },
+    { "name": "panpour", "localName": "515/" },
+    { "name": "simipour", "localName": "516/" },
+    { "name": "munna", "localName": "517/" },
+    { "name": "musharna", "localName": "518/" },
+    { "name": "pidove", "localName": "519/" },
+    { "name": "tranquill", "localName": "520/" },
+    { "name": "unfezant", "localName": "521/" },
+    { "name": "blitzle", "localName": "522/" },
+    { "name": "zebstrika", "localName": "523/" },
+    { "name": "roggenrola", "localName": "524/" },
+    { "name": "boldore", "localName": "525/" },
+    { "name": "gigalith", "localName": "526/" },
+    { "name": "woobat", "localName": "527/" },
+    { "name": "swoobat", "localName": "528/" },
+    { "name": "drilbur", "localName": "529/" },
+    { "name": "excadrill", "localName": "530/" },
+    { "name": "audino", "localName": "531/" },
+    { "name": "timburr", "localName": "532/" },
+    { "name": "gurdurr", "localName": "533/" },
+    { "name": "conkeldurr", "localName": "534/" },
+    { "name": "tympole", "localName": "535/" },
+    { "name": "palpitoad", "localName": "536/" },
+    { "name": "seismitoad", "localName": "537/" },
+    { "name": "throh", "localName": "538/" },
+    { "name": "sawk", "localName": "539/" },
+    { "name": "sewaddle", "localName": "540/" },
+    { "name": "swadloon", "localName": "541/" },
+    { "name": "leavanny", "localName": "542/" },
+    { "name": "venipede", "localName": "543/" },
+    { "name": "whirlipede", "localName": "544/" },
+    { "name": "scolipede", "localName": "545/" },
+    { "name": "cottonee", "localName": "546/" },
+    { "name": "whimsicott", "localName": "547/" },
+    { "name": "petilil", "localName": "548/" },
+    { "name": "lilligant", "localName": "549/" },
+    {
+      "name": "basculin-red-striped",
+      "localName": "550/"
+    },
+    { "name": "sandile", "localName": "551/" },
+    { "name": "krokorok", "localName": "552/" },
+    { "name": "krookodile", "localName": "553/" },
+    { "name": "darumaka", "localName": "554/" },
+    {
+      "name": "darmanitan-standard",
+      "localName": "555/"
+    },
+    { "name": "maractus", "localName": "556/" },
+    { "name": "dwebble", "localName": "557/" },
+    { "name": "crustle", "localName": "558/" },
+    { "name": "scraggy", "localName": "559/" },
+    { "name": "scrafty", "localName": "560/" },
+    { "name": "sigilyph", "localName": "561/" },
+    { "name": "yamask", "localName": "562/" },
+    { "name": "cofagrigus", "localName": "563/" },
+    { "name": "tirtouga", "localName": "564/" },
+    { "name": "carracosta", "localName": "565/" },
+    { "name": "archen", "localName": "566/" },
+    { "name": "archeops", "localName": "567/" },
+    { "name": "trubbish", "localName": "568/" },
+    { "name": "garbodor", "localName": "569/" },
+    { "name": "zorua", "localName": "570/" },
+    { "name": "zoroark", "localName": "571/" },
+    { "name": "minccino", "localName": "572/" },
+    { "name": "cinccino", "localName": "573/" },
+    { "name": "gothita", "localName": "574/" },
+    { "name": "gothorita", "localName": "575/" },
+    { "name": "gothitelle", "localName": "576/" },
+    { "name": "solosis", "localName": "577/" },
+    { "name": "duosion", "localName": "578/" },
+    { "name": "reuniclus", "localName": "579/" },
+    { "name": "ducklett", "localName": "580/" },
+    { "name": "swanna", "localName": "581/" },
+    { "name": "vanillite", "localName": "582/" },
+    { "name": "vanillish", "localName": "583/" },
+    { "name": "vanilluxe", "localName": "584/" },
+    { "name": "deerling", "localName": "585/" },
+    { "name": "sawsbuck", "localName": "586/" },
+    { "name": "emolga", "localName": "587/" },
+    { "name": "karrablast", "localName": "588/" },
+    { "name": "escavalier", "localName": "589/" },
+    { "name": "foongus", "localName": "590/" },
+    { "name": "amoonguss", "localName": "591/" },
+    {
+      "name": "frillish-male",
+      "localName": "592/"
+    },
+    {
+      "name": "jellicent-male",
+      "localName": "593/"
+    },
+    { "name": "alomomola", "localName": "594/" },
+    { "name": "joltik", "localName": "595/" },
+    { "name": "galvantula", "localName": "596/" },
+    { "name": "ferroseed", "localName": "597/" },
+    { "name": "ferrothorn", "localName": "598/" },
+    { "name": "klink", "localName": "599/" },
+    { "name": "klang", "localName": "600/" },
+    { "name": "klinklang", "localName": "601/" },
+    { "name": "tynamo", "localName": "602/" },
+    { "name": "eelektrik", "localName": "603/" },
+    { "name": "eelektross", "localName": "604/" },
+    { "name": "elgyem", "localName": "605/" },
+    { "name": "beheeyem", "localName": "606/" },
+    { "name": "litwick", "localName": "607/" },
+    { "name": "lampent", "localName": "608/" },
+    { "name": "chandelure", "localName": "609/" },
+    { "name": "axew", "localName": "610/" },
+    { "name": "fraxure", "localName": "611/" },
+    { "name": "haxorus", "localName": "612/" },
+    { "name": "cubchoo", "localName": "613/" },
+    { "name": "beartic", "localName": "614/" },
+    { "name": "cryogonal", "localName": "615/" },
+    { "name": "shelmet", "localName": "616/" },
+    { "name": "accelgor", "localName": "617/" },
+    { "name": "stunfisk", "localName": "618/" },
+    { "name": "mienfoo", "localName": "619/" },
+    { "name": "mienshao", "localName": "620/" },
+    { "name": "druddigon", "localName": "621/" },
+    { "name": "golett", "localName": "622/" },
+    { "name": "golurk", "localName": "623/" },
+    { "name": "pawniard", "localName": "624/" },
+    { "name": "bisharp", "localName": "625/" },
+    { "name": "bouffalant", "localName": "626/" },
+    { "name": "rufflet", "localName": "627/" },
+    { "name": "braviary", "localName": "628/" },
+    { "name": "vullaby", "localName": "629/" },
+    { "name": "mandibuzz", "localName": "630/" },
+    { "name": "heatmor", "localName": "631/" },
+    { "name": "durant", "localName": "632/" },
+    { "name": "deino", "localName": "633/" },
+    { "name": "zweilous", "localName": "634/" },
+    { "name": "hydreigon", "localName": "635/" },
+    { "name": "larvesta", "localName": "636/" },
+    { "name": "volcarona", "localName": "637/" },
+    { "name": "cobalion", "localName": "638/" },
+    { "name": "terrakion", "localName": "639/" },
+    { "name": "virizion", "localName": "640/" },
+    {
+      "name": "tornadus-incarnate",
+      "localName": "641/"
+    },
+    {
+      "name": "thundurus-incarnate",
+      "localName": "642/"
+    },
+    { "name": "reshiram", "localName": "643/" },
+    { "name": "zekrom", "localName": "644/" },
+    {
+      "name": "landorus-incarnate",
+      "localName": "645/"
+    },
+    { "name": "kyurem", "localName": "646/" },
+    {
+      "name": "keldeo-ordinary",
+      "localName": "647/"
+    },
+    {
+      "name": "meloetta-aria",
+      "localName": "648/"
+    },
+    { "name": "genesect", "localName": "649/" },
+    { "name": "chespin", "localName": "650/" },
+    { "name": "quilladin", "localName": "651/" },
+    { "name": "chesnaught", "localName": "652/" },
+    { "name": "fennekin", "localName": "653/" },
+    { "name": "braixen", "localName": "654/" },
+    { "name": "delphox", "localName": "655/" },
+    { "name": "froakie", "localName": "656/" },
+    { "name": "frogadier", "localName": "657/" },
+    { "name": "greninja", "localName": "658/" },
+    { "name": "bunnelby", "localName": "659/" },
+    { "name": "diggersby", "localName": "660/" },
+    { "name": "fletchling", "localName": "661/" },
+    { "name": "fletchinder", "localName": "662/" },
+    { "name": "talonflame", "localName": "663/" },
+    { "name": "scatterbug", "localName": "664/" },
+    { "name": "spewpa", "localName": "665/" },
+    { "name": "vivillon", "localName": "666/" },
+    { "name": "litleo", "localName": "667/" },
+    { "name": "pyroar-male", "localName": "668/" },
+    { "name": "flabebe", "localName": "669/" },
+    { "name": "floette", "localName": "670/" },
+    { "name": "florges", "localName": "671/" },
+    { "name": "skiddo", "localName": "672/" },
+    { "name": "gogoat", "localName": "673/" },
+    { "name": "pancham", "localName": "674/" },
+    { "name": "pangoro", "localName": "675/" },
+    { "name": "furfrou", "localName": "676/" },
+    { "name": "espurr", "localName": "677/" },
+    {
+      "name": "meowstic-male",
+      "localName": "678/"
+    },
+    { "name": "honedge", "localName": "679/" },
+    { "name": "doublade", "localName": "680/" },
+    {
+      "name": "aegislash-shield",
+      "localName": "681/"
+    },
+    { "name": "spritzee", "localName": "682/" },
+    { "name": "aromatisse", "localName": "683/" },
+    { "name": "swirlix", "localName": "684/" },
+    { "name": "slurpuff", "localName": "685/" },
+    { "name": "inkay", "localName": "686/" },
+    { "name": "malamar", "localName": "687/" },
+    { "name": "binacle", "localName": "688/" },
+    { "name": "barbaracle", "localName": "689/" },
+    { "name": "skrelp", "localName": "690/" },
+    { "name": "dragalge", "localName": "691/" },
+    { "name": "clauncher", "localName": "692/" },
+    { "name": "clawitzer", "localName": "693/" },
+    { "name": "helioptile", "localName": "694/" },
+    { "name": "heliolisk", "localName": "695/" },
+    { "name": "tyrunt", "localName": "696/" },
+    { "name": "tyrantrum", "localName": "697/" },
+    { "name": "amaura", "localName": "698/" },
+    { "name": "aurorus", "localName": "699/" },
+    { "name": "sylveon", "localName": "700/" },
+    { "name": "hawlucha", "localName": "701/" },
+    { "name": "dedenne", "localName": "702/" },
+    { "name": "carbink", "localName": "703/" },
+    { "name": "goomy", "localName": "704/" },
+    { "name": "sliggoo", "localName": "705/" },
+    { "name": "goodra", "localName": "706/" },
+    { "name": "klefki", "localName": "707/" },
+    { "name": "phantump", "localName": "708/" },
+    { "name": "trevenant", "localName": "709/" },
+    {
+      "name": "pumpkaboo-average",
+      "localName": "710/"
+    },
+    {
+      "name": "gourgeist-average",
+      "localName": "711/"
+    },
+    { "name": "bergmite", "localName": "712/" },
+    { "name": "avalugg", "localName": "713/" },
+    { "name": "noibat", "localName": "714/" },
+    { "name": "noivern", "localName": "715/" },
+    { "name": "xerneas", "localName": "716/" },
+    { "name": "yveltal", "localName": "717/" },
+    { "name": "zygarde-50", "localName": "718/" },
+    { "name": "diancie", "localName": "719/" },
+    { "name": "hoopa", "localName": "720/" },
+    { "name": "volcanion", "localName": "721/" },
+    { "name": "rowlet", "localName": "722/" },
+    { "name": "dartrix", "localName": "723/" },
+    { "name": "decidueye", "localName": "724/" },
+    { "name": "litten", "localName": "725/" },
+    { "name": "torracat", "localName": "726/" },
+    { "name": "incineroar", "localName": "727/" },
+    { "name": "popplio", "localName": "728/" },
+    { "name": "brionne", "localName": "729/" },
+    { "name": "primarina", "localName": "730/" },
+    { "name": "pikipek", "localName": "731/" },
+    { "name": "trumbeak", "localName": "732/" },
+    { "name": "toucannon", "localName": "733/" },
+    { "name": "yungoos", "localName": "734/" },
+    { "name": "gumshoos", "localName": "735/" },
+    { "name": "grubbin", "localName": "736/" },
+    { "name": "charjabug", "localName": "737/" },
+    { "name": "vikavolt", "localName": "738/" },
+    { "name": "crabrawler", "localName": "739/" },
+    { "name": "crabominable", "localName": "740/" },
+    {
+      "name": "oricorio-baile",
+      "localName": "741/"
+    },
+    { "name": "cutiefly", "localName": "742/" },
+    { "name": "ribombee", "localName": "743/" },
+    { "name": "rockruff", "localName": "744/" },
+    {
+      "name": "lycanroc-midday",
+      "localName": "745/"
+    },
+    {
+      "name": "wishiwashi-solo",
+      "localName": "746/"
+    },
+    { "name": "mareanie", "localName": "747/" },
+    { "name": "toxapex", "localName": "748/" },
+    { "name": "mudbray", "localName": "749/" },
+    { "name": "mudsdale", "localName": "750/" },
+    { "name": "dewpider", "localName": "751/" },
+    { "name": "araquanid", "localName": "752/" },
+    { "name": "fomantis", "localName": "753/" },
+    { "name": "lurantis", "localName": "754/" },
+    { "name": "morelull", "localName": "755/" },
+    { "name": "shiinotic", "localName": "756/" },
+    { "name": "salandit", "localName": "757/" },
+    { "name": "salazzle", "localName": "758/" },
+    { "name": "stufful", "localName": "759/" },
+    { "name": "bewear", "localName": "760/" },
+    { "name": "bounsweet", "localName": "761/" },
+    { "name": "steenee", "localName": "762/" },
+    { "name": "tsareena", "localName": "763/" },
+    { "name": "comfey", "localName": "764/" },
+    { "name": "oranguru", "localName": "765/" },
+    { "name": "passimian", "localName": "766/" },
+    { "name": "wimpod", "localName": "767/" },
+    { "name": "golisopod", "localName": "768/" },
+    { "name": "sandygast", "localName": "769/" },
+    { "name": "palossand", "localName": "770/" },
+    { "name": "pyukumuku", "localName": "771/" },
+    { "name": "type-null", "localName": "772/" },
+    { "name": "silvally", "localName": "773/" },
+    {
+      "name": "minior-red-meteor",
+      "localName": "774/"
+    },
+    { "name": "komala", "localName": "775/" },
+    { "name": "turtonator", "localName": "776/" },
+    { "name": "togedemaru", "localName": "777/" },
+    {
+      "name": "mimikyu-disguised",
+      "localName": "778/"
+    },
+    { "name": "bruxish", "localName": "779/" },
+    { "name": "drampa", "localName": "780/" },
+    { "name": "dhelmise", "localName": "781/" },
+    { "name": "jangmo-o", "localName": "782/" },
+    { "name": "hakamo-o", "localName": "783/" },
+    { "name": "kommo-o", "localName": "784/" },
+    { "name": "tapu-koko", "localName": "785/" },
+    { "name": "tapu-lele", "localName": "786/" },
+    { "name": "tapu-bulu", "localName": "787/" },
+    { "name": "tapu-fini", "localName": "788/" },
+    { "name": "cosmog", "localName": "789/" },
+    { "name": "cosmoem", "localName": "790/" },
+    { "name": "solgaleo", "localName": "791/" },
+    { "name": "lunala", "localName": "792/" },
+    { "name": "nihilego", "localName": "793/" },
+    { "name": "buzzwole", "localName": "794/" },
+    { "name": "pheromosa", "localName": "795/" },
+    { "name": "xurkitree", "localName": "796/" },
+    { "name": "celesteela", "localName": "797/" },
+    { "name": "kartana", "localName": "798/" },
+    { "name": "guzzlord", "localName": "799/" },
+    { "name": "necrozma", "localName": "800/" },
+    { "name": "magearna", "localName": "801/" },
+    { "name": "marshadow", "localName": "802/" },
+    { "name": "poipole", "localName": "803/" },
+    { "name": "naganadel", "localName": "804/" },
+    { "name": "stakataka", "localName": "805/" },
+    { "name": "blacephalon", "localName": "806/" },
+    { "name": "zeraora", "localName": "807/" },
+    { "name": "meltan", "localName": "808/" },
+    { "name": "melmetal", "localName": "809/" },
+    { "name": "grookey", "localName": "810/" },
+    { "name": "thwackey", "localName": "811/" },
+    { "name": "rillaboom", "localName": "812/" },
+    { "name": "scorbunny", "localName": "813/" },
+    { "name": "raboot", "localName": "814/" },
+    { "name": "cinderace", "localName": "815/" },
+    { "name": "sobble", "localName": "816/" },
+    { "name": "drizzile", "localName": "817/" },
+    { "name": "inteleon", "localName": "818/" },
+    { "name": "skwovet", "localName": "819/" },
+    { "name": "greedent", "localName": "820/" },
+    { "name": "rookidee", "localName": "821/" },
+    { "name": "corvisquire", "localName": "822/" },
+    { "name": "corviknight", "localName": "823/" },
+    { "name": "blipbug", "localName": "824/" },
+    { "name": "dottler", "localName": "825/" },
+    { "name": "orbeetle", "localName": "826/" },
+    { "name": "nickit", "localName": "827/" },
+    { "name": "thievul", "localName": "828/" },
+    { "name": "gossifleur", "localName": "829/" },
+    { "name": "eldegoss", "localName": "830/" },
+    { "name": "wooloo", "localName": "831/" },
+    { "name": "dubwool", "localName": "832/" },
+    { "name": "chewtle", "localName": "833/" },
+    { "name": "drednaw", "localName": "834/" },
+    { "name": "yamper", "localName": "835/" },
+    { "name": "boltund", "localName": "836/" },
+    { "name": "rolycoly", "localName": "837/" },
+    { "name": "carkol", "localName": "838/" },
+    { "name": "coalossal", "localName": "839/" },
+    { "name": "applin", "localName": "840/" },
+    { "name": "flapple", "localName": "841/" },
+    { "name": "appletun", "localName": "842/" },
+    { "name": "silicobra", "localName": "843/" },
+    { "name": "sandaconda", "localName": "844/" },
+    { "name": "cramorant", "localName": "845/" },
+    { "name": "arrokuda", "localName": "846/" },
+    { "name": "barraskewda", "localName": "847/" },
+    { "name": "toxel", "localName": "848/" },
+    {
+      "name": "toxtricity-amped",
+      "localName": "849/"
+    },
+    { "name": "sizzlipede", "localName": "850/" },
+    { "name": "centiskorch", "localName": "851/" },
+    { "name": "clobbopus", "localName": "852/" },
+    { "name": "grapploct", "localName": "853/" },
+    { "name": "sinistea", "localName": "854/" },
+    { "name": "polteageist", "localName": "855/" },
+    { "name": "hatenna", "localName": "856/" },
+    { "name": "hattrem", "localName": "857/" },
+    { "name": "hatterene", "localName": "858/" },
+    { "name": "impidimp", "localName": "859/" },
+    { "name": "morgrem", "localName": "860/" },
+    { "name": "grimmsnarl", "localName": "861/" },
+    { "name": "obstagoon", "localName": "862/" },
+    { "name": "perrserker", "localName": "863/" },
+    { "name": "cursola", "localName": "864/" },
+    { "name": "sirfetchd", "localName": "865/" },
+    { "name": "mr-rime", "localName": "866/" },
+    { "name": "runerigus", "localName": "867/" },
+    { "name": "milcery", "localName": "868/" },
+    { "name": "alcremie", "localName": "869/" },
+    { "name": "falinks", "localName": "870/" },
+    { "name": "pincurchin", "localName": "871/" },
+    { "name": "snom", "localName": "872/" },
+    { "name": "frosmoth", "localName": "873/" },
+    { "name": "stonjourner", "localName": "874/" },
+    { "name": "eiscue-ice", "localName": "875/" },
+    {
+      "name": "indeedee-male",
+      "localName": "876/"
+    },
+    {
+      "name": "morpeko-full-belly",
+      "localName": "877/"
+    },
+    { "name": "cufant", "localName": "878/" },
+    { "name": "copperajah", "localName": "879/" },
+    { "name": "dracozolt", "localName": "880/" },
+    { "name": "arctozolt", "localName": "881/" },
+    { "name": "dracovish", "localName": "882/" },
+    { "name": "arctovish", "localName": "883/" },
+    { "name": "duraludon", "localName": "884/" },
+    { "name": "dreepy", "localName": "885/" },
+    { "name": "drakloak", "localName": "886/" },
+    { "name": "dragapult", "localName": "887/" },
+    { "name": "zacian", "localName": "888/" },
+    { "name": "zamazenta", "localName": "889/" },
+    { "name": "eternatus", "localName": "890/" },
+    { "name": "kubfu", "localName": "891/" },
+    {
+      "name": "urshifu-single-strike",
+      "localName": "892/"
+    },
+    { "name": "zarude", "localName": "893/" },
+    { "name": "regieleki", "localName": "894/" },
+    { "name": "regidrago", "localName": "895/" },
+    { "name": "glastrier", "localName": "896/" },
+    { "name": "spectrier", "localName": "897/" },
+    { "name": "calyrex", "localName": "898/" },
+    { "name": "wyrdeer", "localName": "899/" },
+    { "name": "kleavor", "localName": "900/" },
+    { "name": "ursaluna", "localName": "901/" },
+    {
+      "name": "basculegion-male",
+      "localName": "902/"
+    },
+    { "name": "sneasler", "localName": "903/" },
+    { "name": "overqwil", "localName": "904/" },
+    {
+      "name": "enamorus-incarnate",
+      "localName": "905/"
+    },
+    { "name": "sprigatito", "localName": "906/" },
+    { "name": "floragato", "localName": "907/" },
+    { "name": "meowscarada", "localName": "908/" },
+    { "name": "fuecoco", "localName": "909/" },
+    { "name": "crocalor", "localName": "910/" },
+    { "name": "skeledirge", "localName": "911/" },
+    { "name": "quaxly", "localName": "912/" },
+    { "name": "quaxwell", "localName": "913/" },
+    { "name": "quaquaval", "localName": "914/" },
+    { "name": "lechonk", "localName": "915/" },
+    {
+      "name": "oinkologne-male",
+      "localName": "916/"
+    },
+    { "name": "tarountula", "localName": "917/" },
+    { "name": "spidops", "localName": "918/" },
+    { "name": "nymble", "localName": "919/" },
+    { "name": "lokix", "localName": "920/" },
+    { "name": "pawmi", "localName": "921/" },
+    { "name": "pawmo", "localName": "922/" },
+    { "name": "pawmot", "localName": "923/" },
+    { "name": "tandemaus", "localName": "924/" },
+    {
+      "name": "maushold-family-of-four",
+      "localName": "925/"
+    },
+    { "name": "fidough", "localName": "926/" },
+    { "name": "dachsbun", "localName": "927/" },
+    { "name": "smoliv", "localName": "928/" },
+    { "name": "dolliv", "localName": "929/" },
+    { "name": "arboliva", "localName": "930/" },
+    {
+      "name": "squawkabilly-green-plumage",
+      "localName": "931/"
+    },
+    { "name": "nacli", "localName": "932/" },
+    { "name": "naclstack", "localName": "933/" },
+    { "name": "garganacl", "localName": "934/" },
+    { "name": "charcadet", "localName": "935/" },
+    { "name": "armarouge", "localName": "936/" },
+    { "name": "ceruledge", "localName": "937/" },
+    { "name": "tadbulb", "localName": "938/" },
+    { "name": "bellibolt", "localName": "939/" },
+    { "name": "wattrel", "localName": "940/" },
+    { "name": "kilowattrel", "localName": "941/" },
+    { "name": "maschiff", "localName": "942/" },
+    { "name": "mabosstiff", "localName": "943/" },
+    { "name": "shroodle", "localName": "944/" },
+    { "name": "grafaiai", "localName": "945/" },
+    { "name": "bramblin", "localName": "946/" },
+    { "name": "brambleghast", "localName": "947/" },
+    { "name": "toedscool", "localName": "948/" },
+    { "name": "toedscruel", "localName": "949/" },
+    { "name": "klawf", "localName": "950/" },
+    { "name": "capsakid", "localName": "951/" },
+    { "name": "scovillain", "localName": "952/" },
+    { "name": "rellor", "localName": "953/" },
+    { "name": "rabsca", "localName": "954/" },
+    { "name": "flittle", "localName": "955/" },
+    { "name": "espathra", "localName": "956/" },
+    { "name": "tinkatink", "localName": "957/" },
+    { "name": "tinkatuff", "localName": "958/" },
+    { "name": "tinkaton", "localName": "959/" },
+    { "name": "wiglett", "localName": "960/" },
+    { "name": "wugtrio", "localName": "961/" },
+    { "name": "bombirdier", "localName": "962/" },
+    { "name": "finizen", "localName": "963/" },
+    { "name": "palafin-zero", "localName": "964/" },
+    { "name": "varoom", "localName": "965/" },
+    { "name": "revavroom", "localName": "966/" },
+    { "name": "cyclizar", "localName": "967/" },
+    { "name": "orthworm", "localName": "968/" },
+    { "name": "glimmet", "localName": "969/" },
+    { "name": "glimmora", "localName": "970/" },
+    { "name": "greavard", "localName": "971/" },
+    { "name": "houndstone", "localName": "972/" },
+    { "name": "flamigo", "localName": "973/" },
+    { "name": "cetoddle", "localName": "974/" },
+    { "name": "cetitan", "localName": "975/" },
+    { "name": "veluza", "localName": "976/" },
+    { "name": "dondozo", "localName": "977/" },
+    {
+      "name": "tatsugiri-clocalNamey",
+      "localName": "978/"
+    },
+    { "name": "annihilape", "localName": "979/" },
+    { "name": "clodsire", "localName": "980/" },
+    { "name": "farigiraf", "localName": "981/" },
+    {
+      "name": "dudunsparce-two-segment",
+      "localName": "982/"
+    },
+    { "name": "kingambit", "localName": "983/" },
+    { "name": "great-tusk", "localName": "984/" },
+    { "name": "scream-tail", "localName": "985/" },
+    { "name": "brute-bonnet", "localName": "986/" },
+    { "name": "flutter-mane", "localName": "987/" },
+    { "name": "slither-wing", "localName": "988/" },
+    { "name": "sandy-shocks", "localName": "989/" },
+    { "name": "iron-treads", "localName": "990/" },
+    { "name": "iron-bundle", "localName": "991/" },
+    { "name": "iron-hands", "localName": "992/" },
+    { "name": "iron-jugulis", "localName": "993/" },
+    { "name": "iron-moth", "localName": "994/" },
+    { "name": "iron-thorns", "localName": "995/" },
+    { "name": "frigibax", "localName": "996/" },
+    { "name": "arctibax", "localName": "997/" },
+    { "name": "baxcalibur", "localName": "998/" },
+    { "name": "gimmighoul", "localName": "999/" },
+    { "name": "gholdengo", "localName": "1000/" },
+    { "name": "wo-chien", "localName": "1001/" },
+    { "name": "chien-pao", "localName": "1002/" },
+    { "name": "ting-lu", "localName": "1003/" },
+    { "name": "chi-yu", "localName": "1004/" },
+    {
+      "name": "roaring-moon",
+      "localName": "1005/"
+    },
+    {
+      "name": "iron-valiant",
+      "localName": "1006/"
+    },
+    { "name": "koraidon", "localName": "1007/" },
+    { "name": "miraidon", "localName": "1008/" },
+    {
+      "name": "walking-wake",
+      "localName": "1009/"
+    },
+    { "name": "iron-leaves", "localName": "1010/" },
+    { "name": "dipplin", "localName": "1011/" },
+    {
+      "name": "poltchageist",
+      "localName": "1012/"
+    },
+    { "name": "sinistcha", "localName": "1013/" },
+    { "name": "okidogi", "localName": "1014/" },
+    { "name": "munkidori", "localName": "1015/" },
+    { "name": "fezandipiti", "localName": "1016/" },
+    { "name": "ogerpon", "localName": "1017/" },
+    { "name": "archaludon", "localName": "1018/" },
+    { "name": "hydrapple", "localName": "1019/" },
+    {
+      "name": "gouging-fire",
+      "localName": "1020/"
+    },
+    { "name": "raging-bolt", "localName": "1021/" },
+    {
+      "name": "iron-boulder",
+      "localName": "1022/"
+    },
+    { "name": "iron-crown", "localName": "1023/" },
+    { "name": "terapagos", "localName": "1024/" },
+    { "name": "pecharunt", "localName": "1025/" },
+    {
+      "name": "deoxys-attack",
+      "localName": "10001/"
+    },
+    {
+      "name": "deoxys-defense",
+      "localName": "10002/"
+    },
+    {
+      "name": "deoxys-speed",
+      "localName": "10003/"
+    },
+    {
+      "name": "wormadam-sandy",
+      "localName": "10004/"
+    },
+    {
+      "name": "wormadam-trash",
+      "localName": "10005/"
+    },
+    {
+      "name": "shaymin-sky",
+      "localName": "10006/"
+    },
+    {
+      "name": "giratina-origin",
+      "localName": "10007/"
+    },
+    { "name": "rotom-heat", "localName": "10008/" },
+    { "name": "rotom-wash", "localName": "10009/" },
+    {
+      "name": "rotom-frost",
+      "localName": "10010/"
+    },
+    { "name": "rotom-fan", "localName": "10011/" },
+    { "name": "rotom-mow", "localName": "10012/" },
+    {
+      "name": "castform-sunny",
+      "localName": "10013/"
+    },
+    {
+      "name": "castform-rainy",
+      "localName": "10014/"
+    },
+    {
+      "name": "castform-snowy",
+      "localName": "10015/"
+    },
+    {
+      "name": "basculin-blue-striped",
+      "localName": "10016/"
+    },
+    {
+      "name": "darmanitan-zen",
+      "localName": "10017/"
+    },
+    {
+      "name": "meloetta-pirouette",
+      "localName": "10018/"
+    },
+    {
+      "name": "tornadus-therian",
+      "localName": "10019/"
+    },
+    {
+      "name": "thundurus-therian",
+      "localName": "10020/"
+    },
+    {
+      "name": "landorus-therian",
+      "localName": "10021/"
+    },
+    {
+      "name": "kyurem-black",
+      "localName": "10022/"
+    },
+    {
+      "name": "kyurem-white",
+      "localName": "10023/"
+    },
+    {
+      "name": "keldeo-resolute",
+      "localName": "10024/"
+    },
+    {
+      "name": "meowstic-female",
+      "localName": "10025/"
+    },
+    {
+      "name": "aegislash-blade",
+      "localName": "10026/"
+    },
+    {
+      "name": "pumpkaboo-small",
+      "localName": "10027/"
+    },
+    {
+      "name": "pumpkaboo-large",
+      "localName": "10028/"
+    },
+    {
+      "name": "pumpkaboo-super",
+      "localName": "10029/"
+    },
+    {
+      "name": "gourgeist-small",
+      "localName": "10030/"
+    },
+    {
+      "name": "gourgeist-large",
+      "localName": "10031/"
+    },
+    {
+      "name": "gourgeist-super",
+      "localName": "10032/"
+    },
+    {
+      "name": "venusaur-mega",
+      "localName": "10033/"
+    },
+    {
+      "name": "charizard-mega-x",
+      "localName": "10034/"
+    },
+    {
+      "name": "charizard-mega-y",
+      "localName": "10035/"
+    },
+    {
+      "name": "blastoise-mega",
+      "localName": "10036/"
+    },
+    {
+      "name": "alakazam-mega",
+      "localName": "10037/"
+    },
+    {
+      "name": "gengar-mega",
+      "localName": "10038/"
+    },
+    {
+      "name": "kangaskhan-mega",
+      "localName": "10039/"
+    },
+    {
+      "name": "pinsir-mega",
+      "localName": "10040/"
+    },
+    {
+      "name": "gyarados-mega",
+      "localName": "10041/"
+    },
+    {
+      "name": "aerodactyl-mega",
+      "localName": "10042/"
+    },
+    {
+      "name": "mewtwo-mega-x",
+      "localName": "10043/"
+    },
+    {
+      "name": "mewtwo-mega-y",
+      "localName": "10044/"
+    },
+    {
+      "name": "ampharos-mega",
+      "localName": "10045/"
+    },
+    {
+      "name": "scizor-mega",
+      "localName": "10046/"
+    },
+    {
+      "name": "heracross-mega",
+      "localName": "10047/"
+    },
+    {
+      "name": "houndoom-mega",
+      "localName": "10048/"
+    },
+    {
+      "name": "tyranitar-mega",
+      "localName": "10049/"
+    },
+    {
+      "name": "blaziken-mega",
+      "localName": "10050/"
+    },
+    {
+      "name": "gardevoir-mega",
+      "localName": "10051/"
+    },
+    {
+      "name": "mawile-mega",
+      "localName": "10052/"
+    },
+    {
+      "name": "aggron-mega",
+      "localName": "10053/"
+    },
+    {
+      "name": "medicham-mega",
+      "localName": "10054/"
+    },
+    {
+      "name": "manectric-mega",
+      "localName": "10055/"
+    },
+    {
+      "name": "banette-mega",
+      "localName": "10056/"
+    },
+    { "name": "absol-mega", "localName": "10057/" },
+    {
+      "name": "garchomp-mega",
+      "localName": "10058/"
+    },
+    {
+      "name": "lucario-mega",
+      "localName": "10059/"
+    },
+    {
+      "name": "abomasnow-mega",
+      "localName": "10060/"
+    },
+    {
+      "name": "floette-eternal",
+      "localName": "10061/"
+    },
+    {
+      "name": "latias-mega",
+      "localName": "10062/"
+    },
+    {
+      "name": "latios-mega",
+      "localName": "10063/"
+    },
+    {
+      "name": "swampert-mega",
+      "localName": "10064/"
+    },
+    {
+      "name": "sceptile-mega",
+      "localName": "10065/"
+    },
+    {
+      "name": "sableye-mega",
+      "localName": "10066/"
+    },
+    {
+      "name": "altaria-mega",
+      "localName": "10067/"
+    },
+    {
+      "name": "gallade-mega",
+      "localName": "10068/"
+    },
+    {
+      "name": "audino-mega",
+      "localName": "10069/"
+    },
+    {
+      "name": "sharpedo-mega",
+      "localName": "10070/"
+    },
+    {
+      "name": "slowbro-mega",
+      "localName": "10071/"
+    },
+    {
+      "name": "steelix-mega",
+      "localName": "10072/"
+    },
+    {
+      "name": "pidgeot-mega",
+      "localName": "10073/"
+    },
+    {
+      "name": "glalie-mega",
+      "localName": "10074/"
+    },
+    {
+      "name": "diancie-mega",
+      "localName": "10075/"
+    },
+    {
+      "name": "metagross-mega",
+      "localName": "10076/"
+    },
+    {
+      "name": "kyogre-primal",
+      "localName": "10077/"
+    },
+    {
+      "name": "groudon-primal",
+      "localName": "10078/"
+    },
+    {
+      "name": "rayquaza-mega",
+      "localName": "10079/"
+    },
+    {
+      "name": "pikachu-rock-star",
+      "localName": "10080/"
+    },
+    {
+      "name": "pikachu-belle",
+      "localName": "10081/"
+    },
+    {
+      "name": "pikachu-pop-star",
+      "localName": "10082/"
+    },
+    {
+      "name": "pikachu-phd",
+      "localName": "10083/"
+    },
+    {
+      "name": "pikachu-libre",
+      "localName": "10084/"
+    },
+    {
+      "name": "pikachu-cosplay",
+      "localName": "10085/"
+    },
+    {
+      "name": "hoopa-unbound",
+      "localName": "10086/"
+    },
+    {
+      "name": "camerupt-mega",
+      "localName": "10087/"
+    },
+    {
+      "name": "lopunny-mega",
+      "localName": "10088/"
+    },
+    {
+      "name": "salamence-mega",
+      "localName": "10089/"
+    },
+    {
+      "name": "beedrill-mega",
+      "localName": "10090/"
+    },
+    {
+      "name": "rattata-alola",
+      "localName": "10091/"
+    },
+    {
+      "name": "raticate-alola",
+      "localName": "10092/"
+    },
+    {
+      "name": "raticate-totem-alola",
+      "localName": "10093/"
+    },
+    {
+      "name": "pikachu-original-cap",
+      "localName": "10094/"
+    },
+    {
+      "name": "pikachu-hoenn-cap",
+      "localName": "10095/"
+    },
+    {
+      "name": "pikachu-sinnoh-cap",
+      "localName": "10096/"
+    },
+    {
+      "name": "pikachu-unova-cap",
+      "localName": "10097/"
+    },
+    {
+      "name": "pikachu-kalos-cap",
+      "localName": "10098/"
+    },
+    {
+      "name": "pikachu-alola-cap",
+      "localName": "10099/"
+    },
+    {
+      "name": "raichu-alola",
+      "localName": "10100/"
+    },
+    {
+      "name": "sandshrew-alola",
+      "localName": "10101/"
+    },
+    {
+      "name": "sandslash-alola",
+      "localName": "10102/"
+    },
+    {
+      "name": "vulpix-alola",
+      "localName": "10103/"
+    },
+    {
+      "name": "ninetales-alola",
+      "localName": "10104/"
+    },
+    {
+      "name": "diglett-alola",
+      "localName": "10105/"
+    },
+    {
+      "name": "dugtrio-alola",
+      "localName": "10106/"
+    },
+    {
+      "name": "meowth-alola",
+      "localName": "10107/"
+    },
+    {
+      "name": "persian-alola",
+      "localName": "10108/"
+    },
+    {
+      "name": "geodude-alola",
+      "localName": "10109/"
+    },
+    {
+      "name": "graveler-alola",
+      "localName": "10110/"
+    },
+    {
+      "name": "golem-alola",
+      "localName": "10111/"
+    },
+    {
+      "name": "grimer-alola",
+      "localName": "10112/"
+    },
+    { "name": "muk-alola", "localName": "10113/" },
+    {
+      "name": "exeggutor-alola",
+      "localName": "10114/"
+    },
+    {
+      "name": "marowak-alola",
+      "localName": "10115/"
+    },
+    {
+      "name": "greninja-battle-bond",
+      "localName": "10116/"
+    },
+    {
+      "name": "greninja-ash",
+      "localName": "10117/"
+    },
+    {
+      "name": "zygarde-10-power-construct",
+      "localName": "10118/"
+    },
+    {
+      "name": "zygarde-50-power-construct",
+      "localName": "10119/"
+    },
+    {
+      "name": "zygarde-complete",
+      "localName": "10120/"
+    },
+    {
+      "name": "gumshoos-totem",
+      "localName": "10121/"
+    },
+    {
+      "name": "vikavolt-totem",
+      "localName": "10122/"
+    },
+    {
+      "name": "oricorio-pom-pom",
+      "localName": "10123/"
+    },
+    {
+      "name": "oricorio-pau",
+      "localName": "10124/"
+    },
+    {
+      "name": "oricorio-sensu",
+      "localName": "10125/"
+    },
+    {
+      "name": "lycanroc-midnight",
+      "localName": "10126/"
+    },
+    {
+      "name": "wishiwashi-school",
+      "localName": "10127/"
+    },
+    {
+      "name": "lurantis-totem",
+      "localName": "10128/"
+    },
+    {
+      "name": "salazzle-totem",
+      "localName": "10129/"
+    },
+    {
+      "name": "minior-orange-meteor",
+      "localName": "10130/"
+    },
+    {
+      "name": "minior-yellow-meteor",
+      "localName": "10131/"
+    },
+    {
+      "name": "minior-green-meteor",
+      "localName": "10132/"
+    },
+    {
+      "name": "minior-blue-meteor",
+      "localName": "10133/"
+    },
+    {
+      "name": "minior-indigo-meteor",
+      "localName": "10134/"
+    },
+    {
+      "name": "minior-violet-meteor",
+      "localName": "10135/"
+    },
+    { "name": "minior-red", "localName": "10136/" },
+    {
+      "name": "minior-orange",
+      "localName": "10137/"
+    },
+    {
+      "name": "minior-yellow",
+      "localName": "10138/"
+    },
+    {
+      "name": "minior-green",
+      "localName": "10139/"
+    },
+    {
+      "name": "minior-blue",
+      "localName": "10140/"
+    },
+    {
+      "name": "minior-indigo",
+      "localName": "10141/"
+    },
+    {
+      "name": "minior-violet",
+      "localName": "10142/"
+    },
+    {
+      "name": "mimikyu-busted",
+      "localName": "10143/"
+    },
+    {
+      "name": "mimikyu-totem-disguised",
+      "localName": "10144/"
+    },
+    {
+      "name": "mimikyu-totem-busted",
+      "localName": "10145/"
+    },
+    {
+      "name": "kommo-o-totem",
+      "localName": "10146/"
+    },
+    {
+      "name": "magearna-original",
+      "localName": "10147/"
+    },
+    {
+      "name": "pikachu-partner-cap",
+      "localName": "10148/"
+    },
+    {
+      "name": "marowak-totem",
+      "localName": "10149/"
+    },
+    {
+      "name": "ribombee-totem",
+      "localName": "10150/"
+    },
+    {
+      "name": "rockruff-own-tempo",
+      "localName": "10151/"
+    },
+    {
+      "name": "lycanroc-dusk",
+      "localName": "10152/"
+    },
+    {
+      "name": "araquanid-totem",
+      "localName": "10153/"
+    },
+    {
+      "name": "togedemaru-totem",
+      "localName": "10154/"
+    },
+    {
+      "name": "necrozma-dusk",
+      "localName": "10155/"
+    },
+    {
+      "name": "necrozma-dawn",
+      "localName": "10156/"
+    },
+    {
+      "name": "necrozma-ultra",
+      "localName": "10157/"
+    },
+    {
+      "name": "pikachu-starter",
+      "localName": "10158/"
+    },
+    {
+      "name": "eevee-starter",
+      "localName": "10159/"
+    },
+    {
+      "name": "pikachu-world-cap",
+      "localName": "10160/"
+    },
+    {
+      "name": "meowth-galar",
+      "localName": "10161/"
+    },
+    {
+      "name": "ponyta-galar",
+      "localName": "10162/"
+    },
+    {
+      "name": "rapidash-galar",
+      "localName": "10163/"
+    },
+    {
+      "name": "slowpoke-galar",
+      "localName": "10164/"
+    },
+    {
+      "name": "slowbro-galar",
+      "localName": "10165/"
+    },
+    {
+      "name": "farfetchd-galar",
+      "localName": "10166/"
+    },
+    {
+      "name": "weezing-galar",
+      "localName": "10167/"
+    },
+    {
+      "name": "mr-mime-galar",
+      "localName": "10168/"
+    },
+    {
+      "name": "articuno-galar",
+      "localName": "10169/"
+    },
+    {
+      "name": "zapdos-galar",
+      "localName": "10170/"
+    },
+    {
+      "name": "moltres-galar",
+      "localName": "10171/"
+    },
+    {
+      "name": "slowking-galar",
+      "localName": "10172/"
+    },
+    {
+      "name": "corsola-galar",
+      "localName": "10173/"
+    },
+    {
+      "name": "zigzagoon-galar",
+      "localName": "10174/"
+    },
+    {
+      "name": "linoone-galar",
+      "localName": "10175/"
+    },
+    {
+      "name": "darumaka-galar",
+      "localName": "10176/"
+    },
+    {
+      "name": "darmanitan-galar-standard",
+      "localName": "10177/"
+    },
+    {
+      "name": "darmanitan-galar-zen",
+      "localName": "10178/"
+    },
+    {
+      "name": "yamask-galar",
+      "localName": "10179/"
+    },
+    {
+      "name": "stunfisk-galar",
+      "localName": "10180/"
+    },
+    { "name": "zygarde-10", "localName": "10181/" },
+    {
+      "name": "cramorant-gulping",
+      "localName": "10182/"
+    },
+    {
+      "name": "cramorant-gorging",
+      "localName": "10183/"
+    },
+    {
+      "name": "toxtricity-low-key",
+      "localName": "10184/"
+    },
+    {
+      "name": "eiscue-noice",
+      "localName": "10185/"
+    },
+    {
+      "name": "indeedee-female",
+      "localName": "10186/"
+    },
+    {
+      "name": "morpeko-hangry",
+      "localName": "10187/"
+    },
+    {
+      "name": "zacian-crowned",
+      "localName": "10188/"
+    },
+    {
+      "name": "zamazenta-crowned",
+      "localName": "10189/"
+    },
+    {
+      "name": "eternatus-eternamax",
+      "localName": "10190/"
+    },
+    {
+      "name": "urshifu-rapid-strike",
+      "localName": "10191/"
+    },
+    {
+      "name": "zarude-dada",
+      "localName": "10192/"
+    },
+    {
+      "name": "calyrex-ice",
+      "localName": "10193/"
+    },
+    {
+      "name": "calyrex-shadow",
+      "localName": "10194/"
+    },
+    {
+      "name": "venusaur-gmax",
+      "localName": "10195/"
+    },
+    {
+      "name": "charizard-gmax",
+      "localName": "10196/"
+    },
+    {
+      "name": "blastoise-gmax",
+      "localName": "10197/"
+    },
+    {
+      "name": "butterfree-gmax",
+      "localName": "10198/"
+    },
+    {
+      "name": "pikachu-gmax",
+      "localName": "10199/"
+    },
+    {
+      "name": "meowth-gmax",
+      "localName": "10200/"
+    },
+    {
+      "name": "machamp-gmax",
+      "localName": "10201/"
+    },
+    {
+      "name": "gengar-gmax",
+      "localName": "10202/"
+    },
+    {
+      "name": "kingler-gmax",
+      "localName": "10203/"
+    },
+    {
+      "name": "lapras-gmax",
+      "localName": "10204/"
+    },
+    { "name": "eevee-gmax", "localName": "10205/" },
+    {
+      "name": "snorlax-gmax",
+      "localName": "10206/"
+    },
+    {
+      "name": "garbodor-gmax",
+      "localName": "10207/"
+    },
+    {
+      "name": "melmetal-gmax",
+      "localName": "10208/"
+    },
+    {
+      "name": "rillaboom-gmax",
+      "localName": "10209/"
+    },
+    {
+      "name": "cinderace-gmax",
+      "localName": "10210/"
+    },
+    {
+      "name": "inteleon-gmax",
+      "localName": "10211/"
+    },
+    {
+      "name": "corviknight-gmax",
+      "localName": "10212/"
+    },
+    {
+      "name": "orbeetle-gmax",
+      "localName": "10213/"
+    },
+    {
+      "name": "drednaw-gmax",
+      "localName": "10214/"
+    },
+    {
+      "name": "coalossal-gmax",
+      "localName": "10215/"
+    },
+    {
+      "name": "flapple-gmax",
+      "localName": "10216/"
+    },
+    {
+      "name": "appletun-gmax",
+      "localName": "10217/"
+    },
+    {
+      "name": "sandaconda-gmax",
+      "localName": "10218/"
+    },
+    {
+      "name": "toxtricity-amped-gmax",
+      "localName": "10219/"
+    },
+    {
+      "name": "centiskorch-gmax",
+      "localName": "10220/"
+    },
+    {
+      "name": "hatterene-gmax",
+      "localName": "10221/"
+    },
+    {
+      "name": "grimmsnarl-gmax",
+      "localName": "10222/"
+    },
+    {
+      "name": "alcremie-gmax",
+      "localName": "10223/"
+    },
+    {
+      "name": "copperajah-gmax",
+      "localName": "10224/"
+    },
+    {
+      "name": "duraludon-gmax",
+      "localName": "10225/"
+    },
+    {
+      "name": "urshifu-single-strike-gmax",
+      "localName": "10226/"
+    },
+    {
+      "name": "urshifu-rapid-strike-gmax",
+      "localName": "10227/"
+    },
+    {
+      "name": "toxtricity-low-key-gmax",
+      "localName": "10228/"
+    },
+    {
+      "name": "growlithe-hisui",
+      "localName": "10229/"
+    },
+    {
+      "name": "arcanine-hisui",
+      "localName": "10230/"
+    },
+    {
+      "name": "voltorb-hisui",
+      "localName": "10231/"
+    },
+    {
+      "name": "electrode-hisui",
+      "localName": "10232/"
+    },
+    {
+      "name": "typhlosion-hisui",
+      "localName": "10233/"
+    },
+    {
+      "name": "qwilfish-hisui",
+      "localName": "10234/"
+    },
+    {
+      "name": "sneasel-hisui",
+      "localName": "10235/"
+    },
+    {
+      "name": "samurott-hisui",
+      "localName": "10236/"
+    },
+    {
+      "name": "lilligant-hisui",
+      "localName": "10237/"
+    },
+    {
+      "name": "zorua-hisui",
+      "localName": "10238/"
+    },
+    {
+      "name": "zoroark-hisui",
+      "localName": "10239/"
+    },
+    {
+      "name": "braviary-hisui",
+      "localName": "10240/"
+    },
+    {
+      "name": "sliggoo-hisui",
+      "localName": "10241/"
+    },
+    {
+      "name": "goodra-hisui",
+      "localName": "10242/"
+    },
+    {
+      "name": "avalugg-hisui",
+      "localName": "10243/"
+    },
+    {
+      "name": "decidueye-hisui",
+      "localName": "10244/"
+    },
+    {
+      "name": "dialga-origin",
+      "localName": "10245/"
+    },
+    {
+      "name": "palkia-origin",
+      "localName": "10246/"
+    },
+    {
+      "name": "basculin-white-striped",
+      "localName": "10247/"
+    },
+    {
+      "name": "basculegion-female",
+      "localName": "10248/"
+    },
+    {
+      "name": "enamorus-therian",
+      "localName": "10249/"
+    },
+    {
+      "name": "tauros-paldea-combat-breed",
+      "localName": "10250/"
+    },
+    {
+      "name": "tauros-paldea-blaze-breed",
+      "localName": "10251/"
+    },
+    {
+      "name": "tauros-paldea-aqua-breed",
+      "localName": "10252/"
+    },
+    {
+      "name": "wooper-paldea",
+      "localName": "10253/"
+    },
+    {
+      "name": "oinkologne-female",
+      "localName": "10254/"
+    },
+    {
+      "name": "dudunsparce-three-segment",
+      "localName": "10255/"
+    },
+    {
+      "name": "palafin-hero",
+      "localName": "10256/"
+    },
+    {
+      "name": "maushold-family-of-three",
+      "localName": "10257/"
+    },
+    {
+      "name": "tatsugiri-droopy",
+      "localName": "10258/"
+    },
+    {
+      "name": "tatsugiri-stretchy",
+      "localName": "10259/"
+    },
+    {
+      "name": "squawkabilly-blue-plumage",
+      "localName": "10260/"
+    },
+    {
+      "name": "squawkabilly-yellow-plumage",
+      "localName": "10261/"
+    },
+    {
+      "name": "squawkabilly-white-plumage",
+      "localName": "10262/"
+    },
+    {
+      "name": "gimmighoul-roaming",
+      "localName": "10263/"
+    },
+    {
+      "name": "koraidon-limited-build",
+      "localName": "10264/"
+    },
+    {
+      "name": "koraidon-sprinting-build",
+      "localName": "10265/"
+    },
+    {
+      "name": "koraidon-swimming-build",
+      "localName": "10266/"
+    },
+    {
+      "name": "koraidon-gliding-build",
+      "localName": "10267/"
+    },
+    {
+      "name": "miraidon-low-power-mode",
+      "localName": "10268/"
+    },
+    {
+      "name": "miraidon-drive-mode",
+      "localName": "10269/"
+    },
+    {
+      "name": "miraidon-aquatic-mode",
+      "localName": "10270/"
+    },
+    {
+      "name": "miraidon-glide-mode",
+      "localName": "10271/"
+    },
+    {
+      "name": "ursaluna-bloodmoon",
+      "localName": "10272/"
+    },
+    {
+      "name": "ogerpon-wellspring-mask",
+      "localName": "10273/"
+    },
+    {
+      "name": "ogerpon-hearthflame-mask",
+      "localName": "10274/"
+    },
+    {
+      "name": "ogerpon-cornerstone-mask",
+      "localName": "10275/"
+    },
+    {
+      "name": "terapagos-terastal",
+      "localName": "10276/"
+    },
+    {
+      "name": "terapagos-stellar",
+      "localName": "10277/"
+    },
+    {
+      "name": "clefable-mega",
+      "localName": "10278/"
+    },
+    {
+      "name": "victreebel-mega",
+      "localName": "10279/"
+    },
+    {
+      "name": "starmie-mega",
+      "localName": "10280/"
+    },
+    {
+      "name": "dragonite-mega",
+      "localName": "10281/"
+    },
+    {
+      "name": "meganium-mega",
+      "localName": "10282/"
+    },
+    {
+      "name": "feraligatr-mega",
+      "localName": "10283/"
+    },
+    {
+      "name": "skarmory-mega",
+      "localName": "10284/"
+    },
+    {
+      "name": "froslass-mega",
+      "localName": "10285/"
+    },
+    {
+      "name": "emboar-mega",
+      "localName": "10286/"
+    },
+    {
+      "name": "excadrill-mega",
+      "localName": "10287/"
+    },
+    {
+      "name": "scolipede-mega",
+      "localName": "10288/"
+    },
+    {
+      "name": "scrafty-mega",
+      "localName": "10289/"
+    },
+    {
+      "name": "eelektross-mega",
+      "localName": "10290/"
+    },
+    {
+      "name": "chandelure-mega",
+      "localName": "10291/"
+    },
+    {
+      "name": "chesnaught-mega",
+      "localName": "10292/"
+    },
+    {
+      "name": "delphox-mega",
+      "localName": "10293/"
+    },
+    {
+      "name": "greninja-mega",
+      "localName": "10294/"
+    },
+    {
+      "name": "pyroar-mega",
+      "localName": "10295/"
+    },
+    {
+      "name": "floette-mega",
+      "localName": "10296/"
+    },
+    {
+      "name": "malamar-mega",
+      "localName": "10297/"
+    },
+    {
+      "name": "barbaracle-mega",
+      "localName": "10298/"
+    },
+    {
+      "name": "dragalge-mega",
+      "localName": "10299/"
+    },
+    {
+      "name": "hawlucha-mega",
+      "localName": "10300/"
+    },
+    {
+      "name": "zygarde-mega",
+      "localName": "10301/"
+    },
+    {
+      "name": "drampa-mega",
+      "localName": "10302/"
+    },
+    {
+      "name": "falinks-mega",
+      "localName": "10303/"
+    },
+    {
+      "name": "raichu-mega-x",
+      "localName": "10304/"
+    },
+    {
+      "name": "raichu-mega-y",
+      "localName": "10305/"
+    },
+    {
+      "name": "chimecho-mega",
+      "localName": "10306/"
+    },
+    {
+      "name": "absol-mega-z",
+      "localName": "10307/"
+    },
+    {
+      "name": "staraptor-mega",
+      "localName": "10308/"
+    },
+    {
+      "name": "garchomp-mega-z",
+      "localName": "10309/"
+    },
+    {
+      "name": "lucario-mega-z",
+      "localName": "10310/"
+    },
+    {
+      "name": "heatran-mega",
+      "localName": "10311/"
+    },
+    {
+      "name": "darkrai-mega",
+      "localName": "10312/"
+    },
+    {
+      "name": "golurk-mega",
+      "localName": "10313/"
+    },
+    {
+      "name": "meowstic-mega",
+      "localName": "10314/"
+    },
+    {
+      "name": "crabominable-mega",
+      "localName": "10315/"
+    },
+    {
+      "name": "golisopod-mega",
+      "localName": "10316/"
+    },
+    {
+      "name": "magearna-mega",
+      "localName": "10317/"
+    },
+    {
+      "name": "magearna-original-mega",
+      "localName": "10318/"
+    },
+    {
+      "name": "zeraora-mega",
+      "localName": "10319/"
+    },
+    {
+      "name": "scovillain-mega",
+      "localName": "10320/"
+    },
+    {
+      "name": "glimmora-mega",
+      "localName": "10321/"
+    },
+    {
+      "name": "tatsugiri-clocalNamey-mega",
+      "localName": "10322/"
+    },
+    {
+      "name": "tatsugiri-droopy-mega",
+      "localName": "10323/"
+    },
+    {
+      "name": "tatsugiri-stretchy-mega",
+      "localName": "10324/"
+    },
+    {
+      "name": "baxcalibur-mega",
+      "localName": "10325/"
+    }
+  ]
+}

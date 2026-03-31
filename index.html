@@ -34,12 +34,32 @@
         }
 
         #pageInfo {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
             font-family: "Huninn";
             color: var(--primary);
             background: rgba(255,255,255,0.9);
             padding: 0.55rem 1rem;
             border-radius: 999px;
             font-weight: 400;
+        }
+
+        #pageInput {
+            width: 56px;
+            border: none;
+            outline: none;
+            background: transparent;
+            text-align: center;
+            color: var(--primary);
+            font-size: 1rem;
+            font-family: "Huninn";
+        }
+
+        #pageInput::-webkit-outer-spin-button,
+        #pageInput::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
 
         .loading {
@@ -219,7 +239,7 @@
         }
 
         h4{
-            font-family: "Alumni Sans SC", sans-serif;
+            /* font-family: "Alumni Sans SC", sans-serif; */
             font-optical-sizing: auto;
             font-style: normal;
             font-variation-settings:
@@ -299,9 +319,14 @@
     </div>
 
     <div id="nav">      
-        <button id="prevBtn">上一頁</button>
-        <span id="pageInfo">第 1 頁</span>
-        <button id="nextBtn">下一頁</button>
+        <button type="button" id="prevBtn">上一頁</button>
+        <div id="pageInfo">
+            <span>第</span>
+            <input type="number" id="pageInput" min="1" value="1">
+            <span id="totalPages">/ 共 1 頁</span>
+        </div>
+        <button type="button" id="goBtn">跳轉</button>
+        <button type="button" id="nextBtn">下一頁</button>
     </div>
 </body>
 <script>
@@ -310,11 +335,13 @@
     const limit=24
     let offset=0
 
-
     const prevBtn=document.getElementById("prevBtn")
     const nextBtn=document.getElementById("nextBtn")
-    const pageInfo=document.getElementById("pageInfo")
+    const pageInput=document.getElementById("pageInput")
+    const totalPagesText=document.getElementById("totalPages")
+    const goBtn=document.getElementById("goBtn")
     const resultBox=document.getElementById("result2")
+    let totalPages = 1
 
     prevBtn.addEventListener("click",()=>{
         if(offset>0){
@@ -329,12 +356,35 @@
         fetchAndRender()
     })
 
+    goBtn.addEventListener("click", goToPage)
+    pageInput.addEventListener("keydown", (event) => {
+        if(event.key === "Enter"){
+            goToPage()
+        }
+    })
+
+    function goToPage(){
+        const inputPage = Number(pageInput.value)
+
+        if(!Number.isInteger(inputPage) || inputPage < 1){
+            pageInput.value = Math.floor(offset / limit) + 1
+            return
+        }
+
+        const safePage = Math.min(inputPage, totalPages)
+        offset = (safePage - 1) * limit
+        fetchAndRender()
+    }
+
      async function fetchAndRender(){
         
         const currentPage = Math.floor(offset / limit) + 1
-        pageInfo.textContent=`第 ${currentPage} 頁載入中...`
+        
+        pageInput.value=currentPage
         prevBtn.disabled=true
         nextBtn.disabled=true
+        goBtn.disabled=true
+        totalPagesText.textContent=`/ 載入中...`
         resultBox.innerHTML=`<p class="loading">載入中...</p>`
 
         const apiList=`${apiUrl}?limit=${limit}&offset=${offset}`
@@ -458,10 +508,14 @@
             })  
 
             //控制上下頁按鈕
+            totalPages = Math.ceil(item.count / limit)
             resultBox.innerHTML=html
-            pageInfo.textContent=`第 ${currentPage} 頁/共 ${Math.ceil(item.count / limit)} 頁`
+            pageInput.value=currentPage
+            pageInput.max=totalPages
+            totalPagesText.textContent=`/ 共 ${totalPages} 頁`
             prevBtn.disabled=offset===0
             nextBtn.disabled=!item.next
+            goBtn.disabled=false
 
          }
          
