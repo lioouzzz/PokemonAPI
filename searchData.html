@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searchData</title>
+</head>
+<body>
+    <script>
+        async function fetchsearchData(){
+            try{
+                const searchArray=[]
+
+                const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=2000')
+                const responseJson=await response.json()
+                const itemUrl=responseJson.results.map(i=>i.url)
+                //console.log(itemUrl)
+                
+                for(let i=0;i<itemUrl.length;i++){
+                    const fetchItemUrl = await fetch(itemUrl[i])
+                    const itemUrlResponse=await fetchItemUrl.json()
+                    //console.log(itemUrlResponse)
+
+                    const speciesUrl=await fetch(itemUrlResponse.species.url)
+                    const speciesResponse=await speciesUrl.json()
+                    const speiesName=speciesResponse.names
+                    speiesName.forEach(n=>{
+                        
+
+                        if(n.language.name==='zh-hant'){
+                            searchArray.push({
+                                id:itemUrlResponse.id,
+                                name:itemUrlResponse.name,
+                                localName:n.name,
+                            })
+                        }
+                    })
+                
+                }
+                const jsonString=JSON.stringify(searchArray)
+                //console.log(jsonString)
+
+                
+            } 
+            catch (error) {
+                console.error('取得資料錯誤', error)
+
+            }
+            
+        }
+        fetchsearchData()
+    </script>
+</body>
+</html>
