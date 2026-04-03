@@ -692,10 +692,24 @@
 
                 function searchEvents(){
                 const input =document.getElementById("searchInput")
+                
+                //debounce實作
+                function debounce(fn,delay=500){
+                    let timerId
+                    return function(...args){
+                        clearTimeout(timerId)
+                        timerId=setTimeout(()=>{
+                            fn.apply(this,args)
+                        },delay)
+                    }
+                }
+                
 
-                input.addEventListener("input",function(e){
-                    const value=e.target.value.trim().toLowerCase()
+                
+                const debouncedInput=debounce(function(e){
                     
+                    const value=e.target.value.trim().toLowerCase()
+                    //console.log("測試debounce生效值:", value);
                     const result =filterPokemon(value)
 
                     if(!value){
@@ -704,11 +718,29 @@
                         fetchAndRender()
                         return
                     }
-                    console.log("篩選結果:", result);
 
                     renderSearchResult(result)
+                },500)
 
-                })
+                input.addEventListener("input",debouncedInput)
+                }
+
+                // input.addEventListener("input",function(e){
+                //     const value=e.target.value.trim().toLowerCase()
+                    
+                //     const result =filterPokemon(value)
+
+                //     if(!value){
+                //         document.getElementById("searchResult").innerHTML=""
+                //         document.getElementById("detailBox").innerHTML=""
+                //         fetchAndRender()
+                //         return
+                //     }
+                //     console.log("篩選結果:", result);
+
+                //     renderSearchResult(result)
+
+                // })
 
                function filterPokemon(value){
                     if(!value) return []
@@ -870,11 +902,10 @@
                 
               }
 
-        }catch (error) {
+        catch (error) {
             console.error('取得資料錯誤', error)
         }
     }
-    
     fetchSearchData()
 </script>
 </html>
