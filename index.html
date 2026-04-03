@@ -335,6 +335,7 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
+            top:12px;
             position: sticky;
             background: rgba(255,255,255,0.55);
             backdrop-filter: blur(14px);
@@ -347,6 +348,8 @@
 
 
         .nav-search{
+            position: relative;
+            width: min(520px, 100%);
             display: flex;
             align-items: center;
             letter-spacing: 0.03em;
@@ -375,12 +378,17 @@
         .nav-search input:focus{
             box-shadow:
                 inset 0 0 0 2px #d7f2cb,
-                0 5px 58px #d7f2cb;
+                0 8px 20px #d7f2cb;
 
         }
 
         .nav-search i{
-            width:70px;
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            box-shadow: 0 12px 30px rgba(9, 93, 149, 0.12);
+            transform: translateY(-50%);
+            width:46px;
             height: 46px;
             display: grid;
             place-items: center;
@@ -391,6 +399,44 @@
             cursor: pointer;
         }
 
+        #searchResult{
+            position:absolute;
+            top:3rem;
+            left:0;
+            width: 100%;
+            max-height: 280px;
+            overflow-y: auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(9, 93, 149, 0.12);
+            border: 1px solid rgba(255,255,255,0.35);
+            z-index: 999;
+            padding: 0.4rem;
+        }
+
+        .search-item{
+            width:100%;
+            border: none;
+            background: transparent;
+            padding: 0.5rem 1rem;
+            text-align: left;
+            font-family: "Huninn", sans-serif;
+            color: #2e3a46;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background 0.2s ease;
+        }
+        .search-item:hover{
+            background: rgba(215, 242, 203, 0.8);
+        }
+
+        #searchResult:empty{
+        display: none;
+    }
+
+        #detailBox{
+        padding: 3rem;
+    }
 
 
         
@@ -681,6 +727,14 @@
 
                 }
 
+                document.addEventListener("click",function(e){  
+                    const searchBox = document.querySelector(".nav-search")
+
+                        if(!searchBox.contains(e.target)){
+                            document.getElementById("searchResult").innerHTML = ""
+                        }
+                })
+
                 const searchData=document.getElementById("searchResult")
 
                 searchData.addEventListener("click",async function(e){
@@ -694,7 +748,12 @@
 
                     await fetchSearchCard(name)
 
-                })
+                }
+            )
+            
+
+            
+
 
                  async function fetchSearchCard(name){
                     const response= await fetch(`${apiUrl}/${name}`)
